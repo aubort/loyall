@@ -1,3 +1,11 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+#baseurl = "//skallab.co"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "skallab"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+[params]
+    description = ""
+    author = "Pascal Aubort"
+    googleAnalytics = ""
