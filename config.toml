@@ -9,3 +9,36 @@ publishdir = "public"
     description = ""
     author = "Pascal Aubort"
     googleAnalytics = ""
+    
+    
+    languages = ["Français", "Deutsch", "English"]
+        
+    
+    [params.layout]
+    headerColor = "mdl-color--white"
+    navigationLinkColor = "mdl-color-text--primary"
+    navigationLinkColor_hover = "mdl-color-text--primary-light"
+    
+    [[params.sections]]
+    sectionId = 1
+    prettyName = "Home"
+    background = "color-primary-dark"
+    partial = "home.html"
+    
+    [[params.sections]]
+    sectionId = 2
+    prettyName = "About"
+    background = "color-primary-dark"
+    partial = "home.html"
+    
+    [[params.sections]]
+    sectionId = 3
+    prettyName = "Partners & Clients"
+    background = "color-primary-dark"
+    partial = "home.html"
+    
+    [[params.sections]]
+    sectionId = 4
+    prettyName = "Contact us"
+    background = "color-primary-dark"
+    partial = "home.html"

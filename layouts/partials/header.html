@@ -1,0 +1,38 @@
+<header class="mdl-layout__header mdl-layout--large-screen-only {{ .Site.Params.layout.headerColor }}">
+  <div class="mdl-layout__header-row header-row">
+    <div class="navigation-title">
+      {{ .Site.Title }}
+    </div>
+    <!--<div class="mdl-layout-spacer"></div>-->
+    <nav class="mdl-navigation">
+      {{ range .Site.Params.sections }}
+      <a class="mdl-navigation__link main-navigation" href="/#{{ .prettyName | urlize }}">
+        {{ .prettyName }}</a> 
+      {{ end }}
+
+
+    </nav>
+    <div class="mdl-navigation__link language-selector">
+      <!-- Right aligned menu below button -->
+      <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">language</i>
+</button>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+        {{ range .Site.Params.languages }}
+          <li class="mdl-menu__item">{{ . }}</li>
+        {{ end }}
+      </ul>
+
+    </div>
+
+  </div>
+</header>
+<!--<div class="mdl-layout__drawer mdl-layout--small-screen-only">-->
+<!--    <span class="mdl-layout-title">{{ .Site.Title }}</span>-->
+<!--    <nav class="mdl-navigation">-->
+<!--      <a class="mdl-navigation__link" href="">Link</a>-->
+<!--      <a class="mdl-navigation__link" href="">Link</a>-->
+<!--      <a class="mdl-navigation__link" href="">Link</a>-->
+<!--      <a class="mdl-navigation__link" href="">Link</a>-->
+<!--    </nav>-->
+<!--  </div>-->
