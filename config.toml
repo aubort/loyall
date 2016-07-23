@@ -10,9 +10,7 @@ publishdir = "public"
     author = "Pascal Aubort"
     googleAnalytics = ""
     
-    
     languages = ["Français", "Deutsch", "English"]
-        
     
     [params.layout]
     headerColor = "mdl-color--white"
