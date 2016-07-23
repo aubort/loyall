@@ -18,25 +18,27 @@ publishdir = "public"
     navigationLinkColor_hover = "mdl-color-text--primary-light"
     
     [[params.sections]]
-    sectionId = 1
+    sectionId = "1"
     prettyName = "Home"
+    subtitle = "Subtitle Section"
     background = "color-primary-dark"
     partial = "home.html"
     
     [[params.sections]]
-    sectionId = 2
+    sectionId = "2"
     prettyName = "About"
+    subtitle = "About our company"
     background = "color-primary-dark"
     partial = "home.html"
     
     [[params.sections]]
-    sectionId = 3
+    sectionId = "3"
     prettyName = "Partners & Clients"
     background = "color-primary-dark"
     partial = "home.html"
     
     [[params.sections]]
-    sectionId = 4
+    sectionId = "4"
     prettyName = "Contact us"
     background = "color-primary-dark"
     partial = "home.html"

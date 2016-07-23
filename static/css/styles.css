@@ -1,5 +1,4 @@
-html>body {
-    background-color: #e7eaec;
+html > body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -7,6 +6,20 @@ div.header-row{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+}
+
+#content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .language-selector{
@@ -23,6 +36,18 @@ a.navigation__link{
 
 a.navigation__link:hover{
     opacity: 1;
+}
+
+.content p{
+    max-width:700px;
+    text-align: justify;
+}
+
+section .section-title{
+    font-weight: 100;
+    font-size: 34px;
+    margin-top:50px;
+    margin-bottom: 50px;
 }
 
 .site-title{
