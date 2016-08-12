@@ -1,6 +1,6 @@
-#baseurl = "//skallab.co"
+baseurl = "loyall.ch"
 languageCode = "en-us"
-title = "skallab"
+title = "Loyall"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
@@ -20,7 +20,7 @@ publishdir = "public"
     [[params.sections]]
     sectionId = "1"
     prettyName = "Home"
-    subtitle = "Subtitle Section"
+    subtitle = "Coming Soon..."
     background = "color-primary-dark"
     partial = "home.html"
     
