@@ -48,7 +48,7 @@ section .section-title {
 .site-logo {
     width: 48px;
     height: 48px;
-    background: url("/img/pointu.svg") no-repeat;
+    background: url("/img/logo.svg") no-repeat;
     /*margin: 0 0 0 -2000px;*/
 }
 
