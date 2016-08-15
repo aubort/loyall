@@ -2,11 +2,12 @@
   <div class="mdl-layout__header-row header-row">
 
     <nav class="mdl-navigation mdl-layout--large-screen-only">
-      <div class="site-logo">
-      </div>
-      <div class="site-title">
-        {{ .Site.Title }}
-      </div>
+      <a href="/" class="mdl-navigation__link">
+        <!--<div class="site-logo"></div>-->
+        <div class="site-title">
+          {{ .Site.Title }}
+        </div>
+      </a>
       {{ range .Site.Params.sections }}
       <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
         {{ .prettyName }}</a> {{ end }}

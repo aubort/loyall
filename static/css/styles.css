@@ -45,12 +45,12 @@ section .section-title {
     margin-bottom: 50px;
 }
 
-.site-logo {
-    width: 42px;
-    height: 42px;
-    background: url("/img/logo.svg") no-repeat;
+/*.site-logo {*/
+/*    width: 42px;*/
+/*    height: 42px;*/
+/*    background: url("/img/logo.svg") no-repeat;*/
     /*margin: 0 0 0 -2000px;*/
-}
+/*}*/
 
 .site-title {
     font-family: "Reem Kufi", sans-serif;
@@ -59,6 +59,10 @@ section .section-title {
     display: block;
     color: #c0392b;
     line-height: 64px;
-    padding: 1px 10px 0 5px;
+    padding: 1px 10px 0 45px !important;
+    /*padding-left: 45px;*/
     opacity: 0.9;
+    background: url("/img/logo.svg") no-repeat;
+    background-size: 42px;
+    background-position: left;
 }
