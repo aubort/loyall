@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		{{ partial "header.html" . }}
+		<main class="mdl-layout__content mdl-color-text--grey-700">
+			<div class="content mdl-grid mdl-grid--no-spacing" id="content">
+				<section>
+				  <div class="section-title"> {{ .Title }} </div>
+      			  {{ .Content }}
+      			</section>
+      		</div>
+    	</main>
+    	{{ partial "footer.html" . }}
+	</div>
+</body>
+</html>

@@ -33,24 +33,22 @@ a.navigation__link:hover {
     opacity: 1;
 }
 
+.contact-card.mdl-card {
+    width: 700px;
+    
+}
+
 .content p {
     max-width: 700px;
     text-align: justify;
 }
 
-section .section-title {
+.section-title {
     font-weight: 100;
     font-size: 34px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
-/*.site-logo {*/
-/*    width: 42px;*/
-/*    height: 42px;*/
-/*    background: url("/img/logo.svg") no-repeat;*/
-    /*margin: 0 0 0 -2000px;*/
-/*}*/
 
 .site-title {
     font-family: "Reem Kufi", sans-serif;

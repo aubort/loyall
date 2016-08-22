@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.16" />
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
@@ -86,25 +85,36 @@
 </div>
 		<main class="mdl-layout__content mdl-color-text--grey-700">
 			<div class="content mdl-grid mdl-grid--no-spacing" id="content">
-      			 
- 
+				<section>
+				  <div class="section-title"> Contact us </div>
+      			  <div class="contact-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__supporting-text">
+    <form id="contact-form">
+      <div class="form-fields-group">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="firstname" pattern="[A-Z,a-z, ]*" name="firstname">
+          <label class="mdl-textfield__label" for="firstname">Name</label>
+          <span class="mdl-textfield__error">Letters and spaces only</span>
+        </div>
+      </div>
+      <div class="form-fields-group">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="lastname" pattern="[A-Z,a-z, ]*" name="lastname">
+          <label class="mdl-textfield__label" for="lastname">Last name</label>
+          <span class="mdl-textfield__error">Letters and spaces only</span>
+        </div>
+      </div>
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+        Submit
+      </button>
+    </form>
+    <!--<div class="mdl-card__actions mdl-card--border">-->
 
+    <!--</div>-->
+  </div>
 
-<section>
-    <div class="section-title">Coming Soon...</div>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        
-    </p>
-    blabla
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        
-    </p>
-</section>
-
-
- 
+      			</section>
       		</div>
     	</main>
     	<script>
