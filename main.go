@@ -14,6 +14,6 @@ func init() {
 func handleContactus(w http.ResponseWriter, r *http.Request) {
     c := appengine.NewContext(r)
     content := r.FormValue("firstname")
-    c.Debugf("The message: %s", content)
+    c.Debugf("Form: %s", content)
     return
 }
