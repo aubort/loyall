@@ -42,8 +42,7 @@
       &lt;div&gt;&lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary&#34;&gt;
         Submit
       &lt;/button&gt;
-      &lt;/div&gt;hugo
-      
+      &lt;/div&gt;
     &lt;/form&gt;
     &lt;!--&lt;div class=&#34;mdl-card__actions mdl-card--border&#34;&gt;--&gt;
 
