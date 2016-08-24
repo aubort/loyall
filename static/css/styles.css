@@ -50,12 +50,12 @@ a.navigation__link:hover {
     margin-bottom: 50px;
 }
 
-.site-title {
+.mdl-navigation__link.site-title {
     font-family: "Reem Kufi", sans-serif;
     border-right: solid #eaeaea 1px;
     font-size: 2em;
     display: block;
-    color: #c0392b;
+    color: #c0392b !important;
     line-height: 64px;
     padding: 1px 10px 0 45px !important;
     /*padding-left: 45px;*/

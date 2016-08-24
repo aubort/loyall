@@ -24,21 +24,21 @@ publishdir = "public"
     background = "color-primary-dark"
     partial = "home.html"
     
-    [[params.sections]]
-    sectionId = "2"
-    prettyName = "About"
-    subtitle = "About our company"
-    background = "color-primary-dark"
-    partial = "home.html"
+    # [[params.sections]]
+    # sectionId = "2"
+    # prettyName = "About"
+    # subtitle = "About our company"
+    # background = "color-primary-dark"
+    # partial = "home.html"
     
-    [[params.sections]]
-    sectionId = "3"
-    prettyName = "Partners & Clients"
-    background = "color-primary-dark"
-    partial = "home.html"
+    # [[params.sections]]
+    # sectionId = "3"
+    # prettyName = "Partners & Clients"
+    # background = "color-primary-dark"
+    # partial = "home.html"
     
-    [[params.sections]]
-    sectionId = "4"
-    prettyName = "Contact us"
-    background = "color-primary-dark"
-    partial = "home.html"
+    # [[params.sections]]
+    # sectionId = "4"
+    # prettyName = "Contact us"
+    # background = "color-primary-dark"
+    # partial = "home.html"
