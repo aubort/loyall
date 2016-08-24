@@ -7,6 +7,7 @@ import (
     "appengine"
     "appengine/mail"
     
+    // "./recaptcha"
     "github.com/haisum/recaptcha"
     // "appengine/log"
 )
