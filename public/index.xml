@@ -14,9 +14,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/loyall.ch/contact/</guid>
-      <description>&lt;div class=&#34;contact-card mdl-card mdl-shadow--2dp&#34;&gt;
+      <description>&lt;script type=&#34;text/javascript&#34;&gt;
+      var onloadCallback = function() {
+        grecaptcha.render(&#39;g-recaptcha&#39;, {
+          &#39;sitekey&#39; : &#39;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#39;,
+          &#39;callback&#39; : verifyRecaptchaCallback
+        });
+      };
+&lt;/script&gt;
+&lt;div class=&#34;contact-card mdl-card mdl-shadow--2dp&#34;&gt;
   &lt;div class=&#34;mdl-card__supporting-text&#34;&gt;
-    &lt;form id=&#34;contact-form&#34;&gt;
+    &lt;form id=&#34;contact-form&#34; action=&#34;?&#34;&gt;
       &lt;div class=&#34;form-fields-group&#34;&gt;
         &lt;div class=&#34;mdl-textfield mdl-js-textfield&#34;&gt;
           &lt;input class=&#34;mdl-textfield__input&#34; type=&#34;text&#34; id=&#34;name&#34; pattern=&#34;[A-Z,a-z, ]*&#34; name=&#34;name&#34;&gt;
@@ -37,9 +45,11 @@
       &lt;/div&gt;
       &lt;!-- Accent-colored raised button with ripple --&gt;
       
-      &lt;div class=&#34;g-recaptcha&#34; data-sitekey=&#34;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#34;&gt;&lt;/div&gt;
+      &lt;!--&lt;div class=&#34;g-recaptcha&#34; data-sitekey=&#34;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#34;&gt;&lt;/div&gt;--&gt;
+      &lt;div class=&#34;g-recaptcha&#34; id=&#34;g-recaptcha&#34;&gt;&lt;/div&gt;
+
       
-      &lt;div&gt;&lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary&#34;&gt;
+      &lt;div&gt;&lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary&#34; id=&#34;submit-button&#34; disabled&gt;
         Submit
       &lt;/button&gt;
       &lt;/div&gt;
@@ -48,7 +58,9 @@
 
     &lt;!--&lt;/div&gt;--&gt;
   &lt;/div&gt;
-</description>
+&lt;script src=&#34;https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&#34;
+        async defer&gt;
+    &lt;/script&gt;</description>
     </item>
     
   </channel>

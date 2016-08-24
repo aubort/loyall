@@ -19,20 +19,6 @@ $("#contact-form").submit(function(e) {
     e.preventDefault(); // avoid to execute the actual submit of the form.
 });
 
-
-// $.fn.serializeObject = function()
-// {
-//     var o = {};
-//     var a = this.serializeArray();
-//     $.each(a, function() {
-//         if (o[this.name] !== undefined) {
-//             if (!o[this.name].push) {
-//                 o[this.name] = [o[this.name]];
-//             }
-//             o[this.name].push(this.value || '');
-//         } else {
-//             o[this.name] = this.value || '';
-//         }
-//     });
-//     return o;
-// };
+var verifyRecaptchaCallback = function(response) {
+  $("#submit-button").prop('disabled', false);
+};

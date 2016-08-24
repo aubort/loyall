@@ -43,6 +43,10 @@ a.navigation__link:hover {
     text-align: justify;
 }
 
+.g-recaptcha{
+    margin-bottom: 20px;
+}
+
 .section-title {
     font-weight: 100;
     font-size: 34px;

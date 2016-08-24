@@ -9,6 +9,7 @@ publishdir = "public"
     description = ""
     author = "Pascal Aubort"
     googleAnalytics = ""
+    #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
     
     languages = ["Français", "Deutsch", "English"]
     

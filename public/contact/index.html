@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="//code.getmdl.io/1.1.3/material.green-red.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+
 
 </head>
 <body>
@@ -77,9 +77,17 @@
 			<div class="content mdl-grid mdl-grid--no-spacing" id="content">
 				<section>
 				  <div class="section-title"> Contact us </div>
-      			  <div class="contact-card mdl-card mdl-shadow--2dp">
+      			  <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('g-recaptcha', {
+          'sitekey' : '6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK',
+          'callback' : verifyRecaptchaCallback
+        });
+      };
+</script>
+<div class="contact-card mdl-card mdl-shadow--2dp">
   <div class="mdl-card__supporting-text">
-    <form id="contact-form">
+    <form id="contact-form" action="?">
       <div class="form-fields-group">
         <div class="mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" id="name" pattern="[A-Z,a-z, ]*" name="name">
@@ -100,9 +108,11 @@
       </div>
       <!-- Accent-colored raised button with ripple -->
       
-      <div class="g-recaptcha" data-sitekey="6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"></div>
+      <!--<div class="g-recaptcha" data-sitekey="6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"></div>-->
+      <div class="g-recaptcha" id="g-recaptcha"></div>
+
       
-      <div><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+      <div><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary" id="submit-button" disabled>
         Submit
       </button>
       </div>
@@ -111,7 +121,9 @@
 
     <!--</div>-->
   </div>
-
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
       			</section>
       		</div>
     	</main>
