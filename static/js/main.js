@@ -12,6 +12,7 @@ $("#contact-form").submit(function(e) {
           data: formData, // serializes the form's elements.
           success: function(data)
             {
+              console.log(data)
             //   alert(data); // show response from the php script.
             }
          });

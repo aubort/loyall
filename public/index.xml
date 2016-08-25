@@ -17,7 +17,7 @@
       <description>&lt;script type=&#34;text/javascript&#34;&gt;
       var onloadCallback = function() {
         grecaptcha.render(&#39;g-recaptcha&#39;, {
-          &#39;sitekey&#39; : &#39;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#39;,
+          &#39;sitekey&#39; : &#39;6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI&#39;,
           &#39;callback&#39; : verifyRecaptchaCallback
         });
       };
@@ -61,6 +61,15 @@
 &lt;script src=&#34;https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&#34;
         async defer&gt;
     &lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thank You!</title>
+      <link>/loyall.ch/confirm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/loyall.ch/confirm/</guid>
+      <description>&lt;h1&gt;DONE&lt;/h1&gt;</description>
     </item>
     
   </channel>

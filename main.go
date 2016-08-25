@@ -6,18 +6,23 @@ import (
     
  //   //recaptcha imports
  //   "encoding/json"
-	// "io/ioutil"
+// 	"io/ioutil"
 	// //"net/http"
 	// "net/url"
 	// "time"
+	"strings"
     
     
     "appengine"
     "appengine/mail"
-    // "appengine/urlfetch"
+    "appengine/urlfetch"
     
     // "./recaptcha"
     // "appengine/log"
+)
+
+var (
+    grooveApiKey = "31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf"
 )
 
 func init() {
@@ -49,61 +54,40 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
 	} else {
 	    ctx.Infof("An email has been sent to: %v", receiver)
 	}
-    return
+    
+    createGrooveTicket(w, ctx, receiver, request)	
 }
 
-// BELOW To be replaced when I figure out how to import friggin packages!
+func createGrooveTicket(w http.ResponseWriter, ctx appengine.Context, sender string, request string){
+    ctx.Infof("Trying to create a Groove Ticket")
+    client := urlfetch.Client(ctx)
+    // url := "https://api.groovehq.com/v1/me?access_token=31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf"
 
-// R type represents an object of Recaptcha and has public property Secret,
-// which is secret obtained from google recaptcha tool admin interface
-// type R struct {
-// 	Secret    string
-// 	lastError []string
-// }
+    // resp, err := client.Get(url)
+    //resp, err := client.Post("https://api.groovehq.com/v1/me?access_token=31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf", "application/json", nil)
+    //var jsonStr = []byte(`{"title":"Buy cheese and bread for breakfast."}`)
+    
+    json := `{"body":"`+request+`", "from":"`+sender+`", "to":"info@loyall.ch"}`
+    buf := strings.NewReader(json)
+    
+    req, err := http.NewRequest("POST", "https://api.groovehq.com/v1/tickets", buf)
+    
+    if err != nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
+    
+	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cf")
+	req.Header.Set("Content-Type", "application/json")
+   
+	resp, err := client.Do(req)
+	ctx.Infof("Response: %v", resp)
 
-// // Struct for parsing json in google's response
-// type googleResponse struct {
-// 	Success    bool
-// 	ErrorCodes []string `json:"error-codes"`
-// }
-
-// // url to post submitted re-captcha response to
-// var postURL = "https://www.google.com/recaptcha/api/siteverify"
-
-// // Verify method, verifies if current request have valid re-captcha response and returns true or false
-// // This method also records any errors in validation.
-// // These errors can be received by calling LastError() method.
-// func (r *R) Verify(req *http.Request) bool {
-// 	r.lastError = make([]string, 1)
-// 	response := req.FormValue("g-recaptcha-response")
-// 	// client := &http.Client{Timeout: 20 * time.Second}
-// 	ctx := appengine.NewContext(req)
-//     client := urlfetch.Client(ctx)
-// 	resp, err := client.Post(postURL,
-// 		url.Values{"secret": {r.Secret}, "response": {response}})
-// 	if err != nil {
-// 		r.lastError = append(r.lastError, err.Error())
-// 		return false
-// 	}
-// 	defer resp.Body.Close()
-// 	body, err := ioutil.ReadAll(resp.Body)
-// 	if err != nil {
-// 		r.lastError = append(r.lastError, err.Error())
-// 		return false
-// 	}
-// 	gr := new(googleResponse)
-// 	err = json.Unmarshal(body, gr)
-// 	if err != nil {
-// 		r.lastError = append(r.lastError, err.Error())
-// 		return false
-// 	}
-// 	if !gr.Success {
-// 		r.lastError = append(r.lastError, gr.ErrorCodes...)
-// 	}
-// 	return gr.Success
-// }
-
-// // LastError returns errors occurred in last re-captcha validation attempt
-// func (r R) LastError() []string {
-// 	return r.lastError
-// }
+    
+    if err != nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
+    
+    fmt.Fprintf(w, "Hi there, I love %s!", resp.Status)
+}
