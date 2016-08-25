@@ -14,7 +14,7 @@ import (
     
     
     "appengine"
-    "appengine/mail"
+    // "appengine/mail"
     "appengine/urlfetch"
     
     // "./recaptcha"
@@ -40,20 +40,20 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
     
     ctx.Infof("Name: %v", name)
     
-    msg := &mail.Message{
-		Sender:  "Loyall.ch Info <info@loyall.ch>",
-		To:      []string{receiver, "info@loyall.ch"},
-		Subject: "Your request to Loyall",
-		Body:    fmt.Sprintf("Dear %v %v", name, request),
-	}
+//     msg := &mail.Message{
+// 		Sender:  "Loyall.ch Info <info@loyall.ch>",
+// 		To:      []string{receiver, "info@loyall.ch"},
+// 		Subject: "Your request to Loyall",
+// 		Body:    fmt.Sprintf("Dear %v %v", name, request),
+// 	}
 	
-	ctx.Infof("Trying to send message: %v", msg)
+// 	ctx.Infof("Trying to send message: %v", msg)
 	
-	if err := mail.Send(ctx, msg); err != nil {
-	    ctx.Errorf("Couldn't send email: %v", err)
-	} else {
-	    ctx.Infof("An email has been sent to: %v", receiver)
-	}
+// 	if err := mail.Send(ctx, msg); err != nil {
+// 	    ctx.Errorf("Couldn't send email: %v", err)
+// 	} else {
+// 	    ctx.Infof("An email has been sent to: %v", receiver)
+// 	}
     
     createGrooveTicket(w, ctx, receiver, request)	
 }
@@ -77,7 +77,7 @@ func createGrooveTicket(w http.ResponseWriter, ctx appengine.Context, sender str
         return
     }
     
-	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cf")
+	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf")
 	req.Header.Set("Content-Type", "application/json")
    
 	resp, err := client.Do(req)
