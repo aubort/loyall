@@ -72,7 +72,7 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
     json := `{"body":"`+request+`", "from":"`+sender+`", "to":"info@loyall.ch"}`
     buf := strings.NewReader(json)
     
-    req, err := http.NewRequest("POST", "https://ap.groovehq.com/v1/tickets", buf)
+    req, err := http.NewRequest("POST", "https://api.groovehq.com/v1/tickets", buf)
     
     if err != nil {
         http.Error(w, err.Error(), http.StatusInternalServerError)
