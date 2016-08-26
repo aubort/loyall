@@ -2,7 +2,7 @@ package main
 
 import ( 
     "net/http"
-    "fmt"
+    // "fmt"
     
  //   //recaptcha imports
  //   "encoding/json"
@@ -32,13 +32,13 @@ func init() {
 
 func handleContactus(w http.ResponseWriter, r *http.Request) {
     
-    ctx := appengine.NewContext(r)
+    c := appengine.NewContext(r)
     
     name := r.FormValue("name")
     receiver := r.FormValue("email")
     request := r.FormValue("request")
     
-    ctx.Infof("Name: %v", name)
+    c.Infof("Name: %v", name)
     
 //     msg := &mail.Message{
 // 		Sender:  "Loyall.ch Info <info@loyall.ch>",
@@ -47,20 +47,22 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
 // 		Body:    fmt.Sprintf("Dear %v %v", name, request),
 // 	}
 	
-// 	ctx.Infof("Trying to send message: %v", msg)
+// 	c.Infof("Trying to send message: %v", msg)
 	
-// 	if err := mail.Send(ctx, msg); err != nil {
-// 	    ctx.Errorf("Couldn't send email: %v", err)
+// 	if err := mail.Send(c, msg); err != nil {
+// 	    c.Errorf("Couldn't send email: %v", err)
 // 	} else {
-// 	    ctx.Infof("An email has been sent to: %v", receiver)
+// 	    c.Infof("An email has been sent to: %v", receiver)
 // 	}
+    // http.Redirect(w, r, "http://www.google.com", 301)
     
-    createGrooveTicket(w, ctx, receiver, request)	
+    createGrooveTicket(w, c, receiver, request)	
 }
 
-func createGrooveTicket(w http.ResponseWriter, ctx appengine.Context, sender string, request string){
-    ctx.Infof("Trying to create a Groove Ticket")
-    client := urlfetch.Client(ctx)
+func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender string, request string){
+    
+    c.Infof("Trying to create a Groove Ticket")
+    
     // url := "https://api.groovehq.com/v1/me?access_token=31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf"
 
     // resp, err := client.Get(url)
@@ -70,7 +72,7 @@ func createGrooveTicket(w http.ResponseWriter, ctx appengine.Context, sender str
     json := `{"body":"`+request+`", "from":"`+sender+`", "to":"info@loyall.ch"}`
     buf := strings.NewReader(json)
     
-    req, err := http.NewRequest("POST", "https://api.groovehq.com/v1/tickets", buf)
+    req, err := http.NewRequest("POST", "https://ap.groovehq.com/v1/tickets", buf)
     
     if err != nil {
         http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -79,15 +81,23 @@ func createGrooveTicket(w http.ResponseWriter, ctx appengine.Context, sender str
     
 	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf")
 	req.Header.Set("Content-Type", "application/json")
-   
+	
+	client := urlfetch.Client(c)
 	resp, err := client.Do(req)
-	ctx.Infof("Response: %v", resp)
-
+	
+    defer resp.Body.Close()
     
     if err != nil {
         http.Error(w, err.Error(), http.StatusInternalServerError)
         return
     }
     
-    fmt.Fprintf(w, "Hi there, I love %s!", resp.Status)
+    if resp.StatusCode != 201 {
+        http.Error(w, "Error while creating ticket:" + resp.Status, resp.StatusCode)
+        c.Errorf("Error while creating ticket: %v", resp.Status)
+        return
+    }
+    
+    c.Infof("Groove ticket creation responde with: %s", resp.Status)
+    
 }
