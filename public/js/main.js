@@ -12,9 +12,12 @@ $("#contact-form").submit(function(e) {
           data: formData, // serializes the form's elements.
           success: function(data)
             {
-              console.log(data)
+              console.log("OK!");
             //   alert(data); // show response from the php script.
-            }
+            },
+          error: function(data){
+            console.log("ERROR");
+          }
          });
     
     e.preventDefault(); // avoid to execute the actual submit of the form.

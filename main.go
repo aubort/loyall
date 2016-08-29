@@ -57,6 +57,7 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
     // http.Redirect(w, r, "http://www.google.com", 301)
     
     createGrooveTicket(w, c, receiver, request)	
+    
 }
 
 func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender string, request string){
@@ -79,7 +80,7 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
         return
     }
     
-	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf")
+	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cd")
 	req.Header.Set("Content-Type", "application/json")
 	
 	client := urlfetch.Client(c)
@@ -98,6 +99,6 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
         return
     }
     
-    c.Infof("Groove ticket creation responde with: %s", resp.Status)
     
+    c.Infof("Groove ticket creation responded with: %s", resp.Status)
 }

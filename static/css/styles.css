@@ -1,4 +1,4 @@
-html> body {
+html > body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,6 +25,7 @@ div.header-row {
 
 a.navigation__link {
     border-right: solid #eaeaea 1px;
+    border-left: solid #eaeaea 1px;
     opacity: 0.7;
     font-weight: 600;
 }
@@ -36,6 +37,10 @@ a.navigation__link:hover {
 .contact-card.mdl-card {
     width: 700px;
     
+}
+
+.mdl-card__title {
+    background: url("/img/email-banner.png") no-repeat;
 }
 
 .content p {
@@ -54,9 +59,18 @@ a.navigation__link:hover {
     margin-bottom: 50px;
 }
 
+form .mdl-textfield{
+    width:100%;
+}
+
+form .mdl-button.submit-button{
+    width: 200px;
+    background: #29B6F6;
+}
+
 .mdl-navigation__link.site-title {
     font-family: "Reem Kufi", sans-serif;
-    border-right: solid #eaeaea 1px;
+    /*border-right: solid #eaeaea 1px;*/
     font-size: 2em;
     display: block;
     color: #c0392b !important;

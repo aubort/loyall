@@ -2,7 +2,7 @@
 title = "Contact us" 
 url = "/contact/" 
 type = "page" 
-layout = "page1"
+layout = "card-layout"
 recaptchasitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
 testingsitekey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
 +++
@@ -15,8 +15,6 @@ testingsitekey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
         });
       };
 </script>
-<div class="contact-card mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__supporting-text">
     <form id="contact-form" action="?">
       <div class="form-fields-group">
         <div class="mdl-textfield mdl-js-textfield">
@@ -42,15 +40,13 @@ testingsitekey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
       <div class="g-recaptcha" id="g-recaptcha"></div>
 
       
-      <div><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary" id="submit-button" disabled>
+      <div><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect submit-button" id="submit-button" disabled>
         Submit
       </button>
-      </div>
     </form>
     <!--<div class="mdl-card__actions mdl-card--border">-->
 
     <!--</div>-->
-  </div>
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
     </script>
