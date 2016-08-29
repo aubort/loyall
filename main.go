@@ -73,7 +73,7 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
         "to":"info@loyall.ch", 
         "subject":"Your message to Loyall",
         "name":"`+name+`",
-        "send_copy_to_customer": true,
+        "send_copy_to_customer": "true",
         "body": "`+request+`"}`
     
     c.Infof("Trying to create a Groove Ticket with following input:%v", json)
