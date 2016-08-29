@@ -6,7 +6,7 @@ import (
     
  //   //recaptcha imports
  //   "encoding/json"
-// 	"io/ioutil"
+	"io/ioutil"
 	// //"net/http"
 	// "net/url"
 	// "time"
@@ -37,6 +37,9 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
     name := r.FormValue("name")
     receiver := r.FormValue("email")
     request := r.FormValue("request")
+    
+    //request = strings.Replace(request, "`", "'", -1)
+    request = strings.Replace(request, "\"", "'", -1)
     
     c.Infof("Received values from form submit name: %v, email: %v, request: %v", name, receiver, request)
     
@@ -73,7 +76,8 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
         "to":"info@loyall.ch", 
         "subject":"Your message to Loyall",
         "name":"`+name+`",
-        "send_copy_to_customer": "true",
+        "email": "`+sender+`",
+        "send_copy_to_customer": true,
         "body": "`+request+`"}`
     
     c.Infof("Trying to create a Groove Ticket with following input:%v", json)
@@ -106,6 +110,8 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
         return
     }
     
+    body, _ := ioutil.ReadAll(resp.Body)
+    c.Debugf(string(body))
     
     c.Infof("Groove ticket creation responded with: %s", resp.Status)
 }
