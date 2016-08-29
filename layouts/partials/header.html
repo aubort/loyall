@@ -1,6 +1,11 @@
 <header class="mdl-layout__header {{ .Site.Params.layout.headerColor }}">
   <div class="mdl-layout__header-row header-row">
-
+  
+  <div class="mdl-navigation__link language-selector">
+        <a id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--raised contact-us-button" href="./contact">
+          Contact us
+        </a>
+      </div>
     <nav class="mdl-navigation mdl-layout--large-screen-only">
       <a href="/" class="mdl-navigation__link site-title">
         <!--<div class="site-logo"></div>-->
@@ -10,7 +15,10 @@
       </a>
       {{ range .Site.Params.sections }}
       <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
-        {{ .prettyName }}</a> {{ end }}
+        {{ .prettyName }}</a> 
+      {{ end }}
+      
+      
         
   <!--    <div class="mdl-navigation__link language-selector">-->
       <!-- Right aligned menu below button -->

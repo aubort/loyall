@@ -17,20 +17,20 @@ testingsitekey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
 </script>
     <form id="contact-form" action="?">
       <div class="form-fields-group">
-        <div class="mdl-textfield mdl-js-textfield">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <input class="mdl-textfield__input" type="text" id="name" pattern="[A-Z,a-z, ]*" name="name">
           <label class="mdl-textfield__label" for="name">First and last name</label>
           <span class="mdl-textfield__error">Letters and spaces only</span>
         </div>
       </div>
       <div class="form-fields-group">
-        <div class="mdl-textfield mdl-js-textfield">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <input class="mdl-textfield__input" type="email" id="email" name="email">
           <label class="mdl-textfield__label" for="email">Email</label>
           <span class="mdl-textfield__error">Email address invalid</span>
         </div>
       </div>
-      <div class="mdl-textfield mdl-js-textfield">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <textarea class="mdl-textfield__input" type="text" rows="5" id="request"></textarea>
         <label class="mdl-textfield__label" for="request">Your request...</label>
       </div>
@@ -40,13 +40,10 @@ testingsitekey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
       <div class="g-recaptcha" id="g-recaptcha"></div>
 
       
-      <div><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect submit-button" id="submit-button" disabled>
+      <div><button class="mdl-button mdl-js-button" id="contact-us-button">
         Submit
       </button>
     </form>
-    <!--<div class="mdl-card__actions mdl-card--border">-->
-
-    <!--</div>-->
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
     </script>
