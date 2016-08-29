@@ -1,4 +1,4 @@
-html> body {
+html > body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,6 +25,7 @@ div.header-row {
 
 a.navigation__link {
     border-right: solid #eaeaea 1px;
+    border-left: solid #eaeaea 1px;
     opacity: 0.7;
     font-weight: 600;
 }
@@ -38,6 +39,18 @@ a.navigation__link:hover {
     
 }
 
+.mdl-card__title {
+    background: #ECEFF1;
+    /*background: url("/img/logo.svg") no-repeat;*/
+}
+
+
+.mdl-button.contact-us-button {
+    background: white;
+    border: 3px solid rgba(192,57,43 ,0.8);
+    color: #c0392b;
+}
+
 .content p {
     max-width: 700px;
     text-align: justify;
@@ -47,16 +60,25 @@ a.navigation__link:hover {
     margin-bottom: 20px;
 }
 
-.section-title {
+.section-title, .mdl-card__title.section-title {
     font-weight: 100;
     font-size: 34px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+form .mdl-textfield{
+    width:100%;
+}
+
+form .mdl-button.submit-button{
+    width: 200px;
+    /*background: #29B6F6;*/
+}
+
 .mdl-navigation__link.site-title {
     font-family: "Reem Kufi", sans-serif;
-    border-right: solid #eaeaea 1px;
+    /*border-right: solid #eaeaea 1px;*/
     font-size: 2em;
     display: block;
     color: #c0392b !important;

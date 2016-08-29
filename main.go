@@ -38,7 +38,7 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
     receiver := r.FormValue("email")
     request := r.FormValue("request")
     
-    c.Infof("Name: %v", name)
+    c.Infof("Received values from form submit name: %v, email: %v, request: %v", name, receiver, request)
     
 //     msg := &mail.Message{
 // 		Sender:  "Loyall.ch Info <info@loyall.ch>",
@@ -56,13 +56,11 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
 // 	}
     // http.Redirect(w, r, "http://www.google.com", 301)
     
-    createGrooveTicket(w, c, receiver, request)	
+    createGrooveTicket(w, c, receiver, request, name)	
     
 }
 
-func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender string, request string){
-    
-    c.Infof("Trying to create a Groove Ticket")
+func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender string, request string, name string){
     
     // url := "https://api.groovehq.com/v1/me?access_token=31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf"
 
@@ -70,7 +68,16 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
     //resp, err := client.Post("https://api.groovehq.com/v1/me?access_token=31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf", "application/json", nil)
     //var jsonStr = []byte(`{"title":"Buy cheese and bread for breakfast."}`)
     
-    json := `{"body":"`+request+`", "from":"`+sender+`", "to":"info@loyall.ch"}`
+    json := `{"body":"`+request+`",
+        "from":"`+sender+`",
+        "to":"info@loyall.ch", 
+        "subject":"Your message to Loyall",
+        "name":"`+name+`",
+        "send_copy_to_customer": true,
+        "body": "`+request+`"}`
+    
+    c.Infof("Trying to create a Groove Ticket with following input:%v", json)
+    
     buf := strings.NewReader(json)
     
     req, err := http.NewRequest("POST", "https://api.groovehq.com/v1/tickets", buf)
@@ -80,7 +87,7 @@ func createGrooveTicket(w http.ResponseWriter, c appengine.Context, sender strin
         return
     }
     
-	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cd")
+	req.Header.Set("Authorization", "Bearer 31ec9b652af2605b87e51ca4acaed7e34ab2274cd588e5ab6fe4afe233816cdf")
 	req.Header.Set("Content-Type", "application/json")
 	
 	client := urlfetch.Client(c)

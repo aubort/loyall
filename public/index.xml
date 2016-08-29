@@ -9,7 +9,7 @@
     <atom:link href="loyall.ch/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Contact us</title>
+      <title>How can we help?</title>
       <link>/loyall.ch/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -17,50 +17,60 @@
       <description>&lt;script type=&#34;text/javascript&#34;&gt;
       var onloadCallback = function() {
         grecaptcha.render(&#39;g-recaptcha&#39;, {
-          &#39;sitekey&#39; : &#39;6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI&#39;,
+          &#39;sitekey&#39; : &#39;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#39;,
           &#39;callback&#39; : verifyRecaptchaCallback
         });
       };
 &lt;/script&gt;
-&lt;div class=&#34;contact-card mdl-card mdl-shadow--2dp&#34;&gt;
-  &lt;div class=&#34;mdl-card__supporting-text&#34;&gt;
+  &lt;h4&gt;Leave us a message and we will get back to you very soon.&lt;/h4&gt;
     &lt;form id=&#34;contact-form&#34; action=&#34;?&#34;&gt;
       &lt;div class=&#34;form-fields-group&#34;&gt;
-        &lt;div class=&#34;mdl-textfield mdl-js-textfield&#34;&gt;
+        &lt;div class=&#34;mdl-textfield mdl-js-textfield mdl-textfield--floating-label&#34;&gt;
           &lt;input class=&#34;mdl-textfield__input&#34; type=&#34;text&#34; id=&#34;name&#34; pattern=&#34;[A-Z,a-z, ]*&#34; name=&#34;name&#34;&gt;
           &lt;label class=&#34;mdl-textfield__label&#34; for=&#34;name&#34;&gt;First and last name&lt;/label&gt;
           &lt;span class=&#34;mdl-textfield__error&#34;&gt;Letters and spaces only&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&#34;form-fields-group&#34;&gt;
-        &lt;div class=&#34;mdl-textfield mdl-js-textfield&#34;&gt;
+        &lt;div class=&#34;mdl-textfield mdl-js-textfield mdl-textfield--floating-label&#34;&gt;
           &lt;input class=&#34;mdl-textfield__input&#34; type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34;&gt;
           &lt;label class=&#34;mdl-textfield__label&#34; for=&#34;email&#34;&gt;Email&lt;/label&gt;
-          &lt;span class=&#34;mdl-textfield__error&#34;&gt;Email address invalid&lt;/span&gt;
+          &lt;span class=&#34;mdl-textfield__error&#34;&gt;Invalid email address&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&#34;mdl-textfield mdl-js-textfield&#34;&gt;
-        &lt;textarea class=&#34;mdl-textfield__input&#34; type=&#34;text&#34; rows=&#34;5&#34; id=&#34;request&#34;&gt;&lt;/textarea&gt;
-        &lt;label class=&#34;mdl-textfield__label&#34; for=&#34;request&#34;&gt;Your request...&lt;/label&gt;
+      &lt;div class=&#34;mdl-textfield mdl-js-textfield mdl-textfield--floating-label&#34;&gt;
+        &lt;textarea class=&#34;mdl-textfield__input&#34; type=&#34;text&#34; rows=&#34;5&#34; id=&#34;request&#34; name=&#34;request&#34;&gt;&lt;/textarea&gt;
+        &lt;label class=&#34;mdl-textfield__label&#34; for=&#34;request&#34;&gt;Your message...&lt;/label&gt;
       &lt;/div&gt;
-      &lt;!-- Accent-colored raised button with ripple --&gt;
-      
-      &lt;!--&lt;div class=&#34;g-recaptcha&#34; data-sitekey=&#34;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#34;&gt;&lt;/div&gt;--&gt;
+      &lt;p&gt;Note: All fields are required&lt;/p&gt;
       &lt;div class=&#34;g-recaptcha&#34; id=&#34;g-recaptcha&#34;&gt;&lt;/div&gt;
 
-      
-      &lt;div&gt;&lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary&#34; id=&#34;submit-button&#34; disabled&gt;
+      &lt;div&gt;&lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored submit-button&#34; id=&#34;submit-button&#34; disabled&gt;
         Submit
       &lt;/button&gt;
-      &lt;/div&gt;
     &lt;/form&gt;
-    &lt;!--&lt;div class=&#34;mdl-card__actions mdl-card--border&#34;&gt;--&gt;
-
-    &lt;!--&lt;/div&gt;--&gt;
-  &lt;/div&gt;
 &lt;script src=&#34;https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&#34;
         async defer&gt;
     &lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thank you!</title>
+      <link>/loyall.ch/confirmation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/loyall.ch/confirmation/</guid>
+      <description>&lt;div class=&#34;mdl-typography--text-center&#34;&gt;
+  &lt;h4 &gt;Your message has been sent and we will get back to you as soon as possible&lt;/h4&gt;
+  
+  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored submit-button&#34; id=&#34;submit-button&#34; href=&#34;loyall.ch/&#34;&gt;
+        Go back to site
+      &lt;/a&gt;
+  
+&lt;/div&gt;
+
+  
+    </description>
     </item>
     
   </channel>
