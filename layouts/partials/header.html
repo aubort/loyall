@@ -1,9 +1,7 @@
 <header class="mdl-layout__header {{ .Site.Params.layout.headerColor }}">
   <div class="mdl-layout__header-row header-row">
     
-    <a href="/" class="">
-      <img src="img/logo.svg" class="site-logo">
-    </a>
+    {{ partial "logo.html" }}
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-layout--small-screen-only">{{ partial "contact-us-button.html" }}</div>
     
