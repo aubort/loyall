@@ -1,22 +1,18 @@
 <header class="mdl-layout__header {{ .Site.Params.layout.headerColor }}">
   <div class="mdl-layout__header-row header-row">
-  
-  <div class="mdl-navigation__link language-selector">
-        <a id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent contact-us-button" href="./contact">
-          Contact us
-        </a>
-      </div>
+    
+    <a href="/" class="">
+      <img src="img/logo.svg" class="site-logo">
+    </a>
+    <div class="mdl-layout-spacer"></div>
+    <div class="mdl-layout--small-screen-only">{{ partial "contact-us-button.html" }}</div>
+    
     <nav class="mdl-navigation mdl-layout--large-screen-only">
-      <a href="/" class="mdl-navigation__link site-title">
-        <!--<div class="site-logo"></div>-->
-        <span>
-          {{ .Site.Title }}
-        </span>
-      </a>
       {{ range .Site.Params.sections }}
-      <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
-        {{ .prettyName }}</a> 
+        <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">{{ .prettyName }}</a> 
       {{ end }}
+      
+    {{ partial "contact-us-button.html" }}
       
       
         
@@ -32,7 +28,7 @@
   <!--    </ul>-->
   <!--  </div>-->
     </nav>
-    
+     
   </div>
 </header>
 
