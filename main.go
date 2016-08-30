@@ -39,7 +39,7 @@ func handleContactus(w http.ResponseWriter, r *http.Request) {
     request := r.FormValue("request")
     
     //request = strings.Replace(request, "`", "'", -1)
-    //request = strings.Replace(request, "\"", "'", -1)
+    request = strings.Replace(request, "\"", "'", -1)
     
     c.Infof("Received values from form submit name: %v, email: %v, request: %v", name, receiver, request)
     
