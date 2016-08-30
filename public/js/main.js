@@ -10,6 +10,9 @@ $("#contact-form").submit(function(e) {
       return;
     }
     
+    $("#submit-button").prop('disabled', true);
+    $("#submit-button").prop('value', 'Sending...');
+    
     $.ajax({
           type: "POST",
           url: url,

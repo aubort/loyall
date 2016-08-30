@@ -34,21 +34,13 @@ a.navigation__link:hover {
     opacity: 1;
 }
 
-.contact-card.mdl-card {
-    width: 700px;
-    
+.card-layout__card.mdl-card {
+    width: 90%;
 }
 
 .mdl-card__title {
     background: #ECEFF1;
     /*background: url("/img/logo.svg") no-repeat;*/
-}
-
-
-.mdl-button.contact-us-button {
-    background: white;
-    border: 3px solid rgba(192,57,43 ,0.8);
-    color: #c0392b;
 }
 
 .content p {
