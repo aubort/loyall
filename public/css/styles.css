@@ -3,6 +3,7 @@ html > body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 #content {
     max-width: 1000px;
     margin-left: auto;
@@ -53,7 +54,7 @@ div.header-row {
         width: 100%;
     }
     
-    header > .site-logo {
+    header .site-logo {
         margin-left: 48px;
         height: 45px;
     }
@@ -67,25 +68,34 @@ footer.mdl-mini-footer.default-footer {
 
 /* card layout elements */
 
+.card-layout__card.mdl-card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+}
+
 .mdl-card__title {
-    background: #ECEFF1;
+    background: rgba(79,195,247 ,1);
     /*background: url("/img/logo.svg") no-repeat;*/
 }
 
-.section-title, .mdl-card__title.section-title {
+.section-title {
     font-weight: 100;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .section-title {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size:1.5em;
-    }    
+.mdl-card__title {
+    margin:0px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .card-layout__card.mdl-card {
+        width: 95%;
+    }
+}
+
 
 /*default elements styles*/
 
@@ -119,18 +129,6 @@ footer.mdl-mini-footer.default-footer {
     right: 0;
 }
 
-
-
-
-
-.card-layout__card.mdl-card {
-    width: 90%;
-}
-
-
-
-
-
 .g-recaptcha{
     margin-bottom: 20px;
 }
@@ -142,6 +140,6 @@ form .mdl-textfield{
 }
 
 form .mdl-button.submit-button{
-    width: 200px;
+    width: 100%;
     /*background: #29B6F6;*/
 }
