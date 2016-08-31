@@ -9,10 +9,9 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		<main class="mdl-layout__content mdl-color-text--grey-700">
 			<div class="content mdl-grid mdl-grid--no-spacing" id="content">
-				<section>
 					<div>{{ partial "logo.html" }}</div>
 					<div class="card-layout__card mdl-card mdl-shadow--2dp">
-						<div class="mdl-card__title">{{ .Title }}
+						<div class="mdl-card__title section-title">{{ .Title }}
 							<!--<h2 class="mdl-card__title-text">Welcome</h2>-->
 							<!--<div class="section-title"> {{ .Title }} </div>-->
 						</div>
@@ -21,7 +20,6 @@
 							{{ .Content }}
 						</div>
 					</div>
-				</section>
 			</div>
 				<!--{{ partial "footer.html" . }}-->
 		</main>
