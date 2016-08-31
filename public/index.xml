@@ -17,7 +17,7 @@
       <description>&lt;script type=&#34;text/javascript&#34;&gt;
       var onloadCallback = function() {
         grecaptcha.render(&#39;g-recaptcha&#39;, {
-          &#39;sitekey&#39; : &#39;6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI&#39;,
+          &#39;sitekey&#39; : &#39;6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK&#39;,
           &#39;callback&#39; : verifyRecaptchaCallback
         });
       };
