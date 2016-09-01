@@ -55,18 +55,15 @@
     &lt;/div&gt;
     &lt;/form&gt;
     &lt;/div&gt;
-    &lt;!--&lt;div class=&#34;mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-phone&#34;&gt;--&gt;
-      
-    &lt;!--&lt;/div&gt;--&gt;
-    &lt;div class=&#34;mdl-cell mdl-cell--1-col mdl-cell--2-col-tablet mdl-cell--1-col-phone&#34;&gt;
-      &lt;div class=&#34;mdl-card mdl-shadow--2dp&#34;&gt;
+    &lt;div class=&#34;mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone&#34;&gt;
+      &lt;div class=&#34;mdl-card mdl-shadow--2dp address-card&#34;&gt;
         &lt;div class=&#34;mdl-card__supporting-text&#34;&gt;
           &lt;h5&gt;Office address&lt;/h5&gt;
-          &lt;p&gt;
+          &lt;span&gt;
             Loyall GmbH &lt;br&gt;
             Seestrasse 124 &lt;br&gt;
             CH-8802 Kilchberg (Zurich)&lt;br&gt;
-          &lt;/p&gt;
+          &lt;/span&gt;
           &lt;a href=&#34;https://goo.gl/maps/FTHi5CMEZxt&#34; target=&#34;_blank&#34;&gt;View on the map&lt;/a&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -86,7 +83,7 @@
       <description>&lt;div class=&#34;mdl-typography--text-center&#34;&gt;
   &lt;h4 &gt;Your message has been sent and we will get back to you as soon as possible&lt;/h4&gt;
   
-  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored submit-button&#34; id=&#34;submit-button&#34; href=&#34;loyall.ch/&#34;&gt;
+  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised btn-primary&#34; id=&#34;submit-button&#34; href=&#34;loyall.ch/&#34;&gt;
         Go back to site
       &lt;/a&gt;
   
