@@ -25,4 +25,18 @@
       {{ partial "contact-us-button.html" }}
 </header>
 
-{{ partial "navigation-drawer.html" }}
+<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+  <nav class="mdl-navigation drawer-navigation">
+    <a class="mdl-navigation__link" href="/"><i class="material-icons">home</i></a>
+    
+    {{ range .Site.Params.sections }}
+        <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
+          {{ .prettyName }}</a> 
+    {{ end }} 
+  </nav>
+  <!--<ul>-->
+  <!--      {{ range .Site.Params.languages }}-->
+  <!--      <li class="mdl-navigation__link navigation__link">{{ . }}</li>-->
+  <!--      {{ end }}-->
+  <!--    </ul>-->
+</div>
