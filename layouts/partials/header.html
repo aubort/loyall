@@ -1,44 +1,28 @@
-<header class="mdl-layout__header {{ .Site.Params.layout.headerColor }}">
-  <div class="mdl-layout__header-row header-row">
+<header class="mdl-layout__header {{ .Site.Params.layout.headerColor }} header-container">
+  <div class="mdl-layout__header-row header-row" id="header-row">
+    <a href="/" class="header-logo"></a>
     
-    {{ partial "logo.html" }}
     <div class="mdl-layout-spacer"></div>
-    <div class="mdl-layout--small-screen-only">{{ partial "contact-us-button.html" }}</div>
-    
-    <nav class="mdl-navigation mdl-layout--large-screen-only">
-      {{ range .Site.Params.sections }}
-        <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">{{ .prettyName }}</a> 
-      {{ end }}
-      
-    {{ partial "contact-us-button.html" }}
+      <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
+        {{ range .Site.Params.sections }}
+        <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
+          {{ .prettyName }}</a> 
+        {{ end }} 
         
-  <!--    <div class="mdl-navigation__link language-selector">-->
-      <!-- Right aligned menu below button -->
-  <!--    <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">-->
+
+  <!--      <div class="mdl-navigation__link language-selector">-->
+  <!--        Right aligned menu below button-->
+  <!--        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">-->
   <!--<i class="material-icons">language</i>-->
   <!--    </button>-->
-  <!--    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">-->
-  <!--      {{ range .Site.Params.languages }}-->
-  <!--      <li class="mdl-menu__item">{{ . }}</li>-->
-  <!--      {{ end }}-->
-  <!--    </ul>-->
-  <!--  </div>-->
-    </nav>
-     
-  </div>
+  <!--        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">-->
+  <!--          {{ range .Site.Params.languages }}-->
+  <!--          <li class="mdl-menu__item">{{ . }}</li>-->
+  <!--          {{ end }}-->
+  <!--        </ul>-->
+  <!--      </div>-->
+      </nav>
+      {{ partial "contact-us-button.html" }}
 </header>
 
-<div class="mdl-layout__drawer mdl-layout--small-screen-only">
-  
-  <div class="mdl-layout-title site-title">{{ .Site.Title }}</div>
-  <nav class="mdl-navigation">
-    {{ range .Site.Params.sections }}
-    <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
-        {{ .prettyName }}</a> {{ end }}
-  </nav>
-  <!--<ul>-->
-  <!--      {{ range .Site.Params.languages }}-->
-  <!--      <li class="mdl-navigation__link navigation__link">{{ . }}</li>-->
-  <!--      {{ end }}-->
-  <!--    </ul>-->
-</div>
+{{ partial "navigation-drawer.html" }}

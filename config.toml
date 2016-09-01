@@ -25,12 +25,12 @@ publishdir = "public"
     background = "color-primary-dark"
     partial = "home.html"
     
-    # [[params.sections]]
-    # sectionId = "2"
-    # prettyName = "About"
-    # subtitle = "About our company"
-    # background = "color-primary-dark"
-    # partial = "home.html"
+    [[params.sections]]
+    sectionId = "2"
+    prettyName = "About"
+    subtitle = "About our company"
+    background = "color-primary-dark"
+    partial = "about.html"
     
     # [[params.sections]]
     # sectionId = "3"
