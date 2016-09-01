@@ -1,6 +1,6 @@
 baseurl = "loyall.ch"
 languageCode = "en-us"
-title = "Loyall"
+title = "Loyall GmbH - IT Consulting and Google Apps Specialists"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
