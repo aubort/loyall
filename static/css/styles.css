@@ -4,6 +4,9 @@ html > body {
     background-color: #FAFAFA;
 }
 
+main {
+    width:100%;
+}
 
 #content {
     width: 100%;
@@ -19,9 +22,53 @@ html > body {
     text-align: justify;
 }
 
+section, #header-row {
+    padding: 0 10%;
+}
+
+section {
+    display:block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin:0;
+}
+.section-title.primary-color, h5.primary-color{
+    color: #03A9F4;
+}
+
+
+.section-home{
+    background-color: #27ae60;
+    text-align: center;
+    color: #fff;
+    font-size: 150%;
+}
+
+.section-contact, #header-row-contact {
+    /*width:100%;*/
+    padding: 0 20%;
+}
+
+.section-title.section-subtitle{
+    font-size:80%;
+    line-height: 110%
+}
+
+
 @media (max-width: 1024px) {
     #content {
         width:95%;
+    }
+    section, .section-contact, #header-row-contact{
+        padding:0 2%;
     }
 }
 
@@ -36,9 +83,7 @@ a.navigation__link:hover {
     opacity: 1;
 }
 
-#header-row {
-    padding: 0 10%;
-}
+
 
 .header-logo{
     background-image: url(/img/logo.svg);
@@ -77,33 +122,34 @@ footer.mdl-mini-footer.default-footer {
 
 /* card layout elements */
 
-.card-layout__card.mdl-card{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width:100%;
+.card-layout__card.card-page {
+ width:100%;   
+ margin-top: 10px;
 }
 
-.mdl-card__title {
-    background-color: #B2DFDB;
+
+/*.card-layout__card.mdl-card{*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 10px;*/
+/*    width:100%;*/
+/*}*/
+
+/*.mdl-card__title {*/
+/*    background-color: #B2DFDB;*/
     /*background: url("/img/logo.svg") no-repeat;*/
-}
+/*}*/
 
-.section-title {
-    font-weight: 100;
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
-.mdl-card__title {
-    margin:0px;
-}
 
-@media only screen and (max-width: 1024px) {
-    .card-layout__card.mdl-card {
-        width: 95%;
-    }
-}
+/*.mdl-card__title {*/
+/*    margin:0px;*/
+/*}*/
+
+/*@media only screen and (max-width: 1024px) {*/
+/*    .card-layout__card.mdl-card {*/
+/*        width: 95%;*/
+/*    }*/
+/*}*/
 
 
 /*default elements styles*/

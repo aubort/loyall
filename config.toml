@@ -21,7 +21,7 @@ publishdir = "public"
     [[params.sections]]
     sectionId = "1"
     prettyName = "Home"
-    subtitle = "Coming Soon..."
+    subtitle = "Trusted Partner for your IT"
     background = "color-primary-dark"
     partial = "home.html"
     

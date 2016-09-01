@@ -2,12 +2,10 @@
 {{ range where .Site.Params.sections "sectionId" "==" $sectionId }} 
 {{ $section := . }}
 
-<a id="{{ $section.prettyName | urlize }}"></a>
-<section class="full section-home">
+<section class="section-home">
+    <a id="{{ $section.prettyName | urlize }}"></a>
+    
     <div class="section-title">{{ $section.subtitle }}</div>
-    <p>
-        Coming in September 2016 Loyall is an IT consulting company based in Zurich, Switzerland. Our website will be ready in a few days, check back again! For information, contact us at info@loyall.ch.        
-    </p>
+    <p class="section-title section-subtitle">Loyall Gmbh is your trusted partner for IT projects and Google Apps for Work and Education</p>
 </section>
-
 {{ end }}
