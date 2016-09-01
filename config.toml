@@ -8,7 +8,7 @@ publishdir = "public"
 [params]
     description = ""
     author = "Pascal Aubort"
-    googleAnalytics = ""
+    googleAnalytics = "UA-82408067-1"
     #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
     
     languages = ["Français", "Deutsch", "English"]
@@ -20,17 +20,17 @@ publishdir = "public"
     
     [[params.sections]]
     sectionId = "1"
-    prettyName = "Home"
+    prettyName = "About us"
     subtitle = "Trusted Advisor for your IT"
     # background = "color-primary-dark"
     partial = "home.html"
     
-    [[params.sections]]
-    sectionId = "2"
-    prettyName = "About"
-    subtitle = "Coming soon..."
-    # background = "color-primary-dark"
-    partial = "about.html"
+    # [[params.sections]]
+    # sectionId = "2"
+    # prettyName = "About"
+    # subtitle = "Coming soon..."
+    # # background = "color-primary-dark"
+    # partial = "about.html"
     
     # [[params.sections]]
     # sectionId = "3"
