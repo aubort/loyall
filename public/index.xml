@@ -58,7 +58,7 @@
     &lt;div class=&#34;mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone&#34;&gt;
       &lt;div class=&#34;mdl-card mdl-shadow--2dp address-card&#34;&gt;
         &lt;div class=&#34;mdl-card__supporting-text&#34;&gt;
-          &lt;h5&gt;Office address&lt;/h5&gt;
+          &lt;h5 class=&#34;primary-color&#34;&gt;Office address&lt;/h5&gt;
           &lt;span&gt;
             Loyall GmbH &lt;br&gt;
             Seestrasse 124 &lt;br&gt;

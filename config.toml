@@ -21,15 +21,15 @@ publishdir = "public"
     [[params.sections]]
     sectionId = "1"
     prettyName = "Home"
-    subtitle = "Trusted Partner for your IT"
-    background = "color-primary-dark"
+    subtitle = "Trusted Advisor for your IT"
+    # background = "color-primary-dark"
     partial = "home.html"
     
     [[params.sections]]
     sectionId = "2"
     prettyName = "About"
-    subtitle = "About our company"
-    background = "color-primary-dark"
+    subtitle = "Coming soon..."
+    # background = "color-primary-dark"
     partial = "about.html"
     
     # [[params.sections]]
