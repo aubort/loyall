@@ -129,6 +129,9 @@ footer.mdl-mini-footer.default-footer {
  margin-top: 10px;
 }
 
+.card-page > .mdl-card__supporting-text{
+    width:auto;
+}
 /*default elements styles*/
 
 .mdl-button.btn-primary {
@@ -161,7 +164,6 @@ footer.mdl-mini-footer.default-footer {
 .mdl-card.address-card{
     width: 100%;
 }
-
 
 
 .language-selector {
