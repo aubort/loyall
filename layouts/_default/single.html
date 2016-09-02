@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		{{ partial "header.html" . }}
+		<main class="mdl-layout__content mdl-color-text--grey-700">
+      		{{ .Content }}
+    	</main>
+		{{ partial "footer.html" . }}
+	</div>
+	{{ partial "footer_includes.html" . }}
+</body>
+</html>

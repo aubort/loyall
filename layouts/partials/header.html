@@ -5,7 +5,7 @@
     <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
         {{ range .Site.Params.sections }}
-        <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
+        <a class="mdl-navigation__link navigation__link" href="{{ .url | urlize }}">
           {{ .prettyName }}</a> 
         {{ end }} 
         
@@ -30,7 +30,7 @@
     <a class="mdl-navigation__link" href="/"><i class="material-icons">home</i></a>
     
     {{ range .Site.Params.sections }}
-        <a class="mdl-navigation__link navigation__link" href="/#{{ .prettyName | urlize }}">
+        <a class="mdl-navigation__link navigation__link" href="{{ .url | urlize }}">
           {{ .prettyName }}</a> 
     {{ end }} 
   </nav>

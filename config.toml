@@ -22,22 +22,19 @@ publishdir = "public"
     sectionId = "1"
     prettyName = "About us"
     subtitle = "Trusted Advisor for your IT"
-    # background = "color-primary-dark"
-    partial = "home.html"
+    url = "/#about-us"
     
     [[params.sections]]
     sectionId = "2"
     prettyName = "Google for Work"
     subtitle = "Google for Work"
-    # background = "color-primary-dark"
-    partial = "google-for-work.html"
+    url = "/google-for-work"
     
     [[params.sections]]
     sectionId = "3"
     prettyName = "Google for Education"
     subtitle = "Google for Education"
-    # background = "color-primary-dark"
-    partial = "google-for-education.html"
+    url = "/google-for-education"
     
     # [[params.sections]]
     # sectionId = "3"
