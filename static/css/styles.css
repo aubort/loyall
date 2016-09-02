@@ -49,7 +49,10 @@ section {
 
 .section-contact, #header-row-contact {
     /*width:100%;*/
-    padding: 0 20%;
+    /*padding: 0 20%;*/
+    padding-left:20%;
+    padding-right: 20%;
+    padding-bottom:10px;
 }
 
 .section-title.section-subtitle{
@@ -129,7 +132,7 @@ footer.mdl-mini-footer.default-footer {
 /*default elements styles*/
 
 .mdl-button.btn-primary {
-    /*color: #63ba5f;*/
+    color: #fff;
     border-color: #27ae60;
     background:#27ae60;
     border-radius: 3px;
@@ -140,8 +143,8 @@ footer.mdl-mini-footer.default-footer {
 .mdl-button.btn-primary:hover {
     /*background: #FFF;*/
     color: #fff;
-    border-color: #49a145;
-    background: #49a145;
+    border-color: #2dc16c;
+    background: #2dc16c;
     /*border: 3px solid #49a145;*/
     /*color: #49a145;*/
 }
