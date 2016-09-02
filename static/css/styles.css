@@ -69,9 +69,11 @@ section {
 
 
 /*default header styles*/
-a.navigation__link {
+a.mdl-navigation__link.navigation__link {
     opacity: 0.7;
-    font-weight: 600;
+    font-weight: 500;
+    font-size:1em;
+    padding: 0 17px;
 }
 
 a.navigation__link:hover {
