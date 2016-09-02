@@ -25,12 +25,19 @@ publishdir = "public"
     # background = "color-primary-dark"
     partial = "home.html"
     
-    # [[params.sections]]
-    # sectionId = "2"
-    # prettyName = "About"
-    # subtitle = "Coming soon..."
-    # # background = "color-primary-dark"
-    # partial = "about.html"
+    [[params.sections]]
+    sectionId = "2"
+    prettyName = "Google for Work"
+    subtitle = "Google for Work"
+    # background = "color-primary-dark"
+    partial = "google-for-work.html"
+    
+    [[params.sections]]
+    sectionId = "3"
+    prettyName = "Google for Education"
+    subtitle = "Google for Education"
+    # background = "color-primary-dark"
+    partial = "google-for-education.html"
     
     # [[params.sections]]
     # sectionId = "3"
