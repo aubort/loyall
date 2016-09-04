@@ -9,6 +9,19 @@
     <atom:link href="loyall.ch/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Google for Work</title>
+      <link>/loyall.ch/google-for-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/loyall.ch/google-for-work/</guid>
+      <description>&lt;section&gt;
+&lt;h1&gt;test&lt;/h1&gt;    
+    
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How can we help?</title>
       <link>/loyall.ch/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -49,7 +62,7 @@
       &lt;div class=&#34;g-recaptcha&#34; id=&#34;g-recaptcha&#34;&gt;&lt;/div&gt;
 
       &lt;div&gt;
-        &lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored submit-button&#34; id=&#34;submit-button&#34; disabled&gt;
+        &lt;button class=&#34;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-primary submit-button&#34; id=&#34;submit-button&#34;&gt;
         Submit
       &lt;/button&gt;
     &lt;/div&gt;
@@ -81,12 +94,12 @@
       
       <guid>/loyall.ch/confirmation/</guid>
       <description>&lt;div class=&#34;mdl-typography--text-center&#34;&gt;
-  &lt;h4 &gt;Your message has been sent and we will get back to you as soon as possible&lt;/h4&gt;
-  
-  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised btn-primary&#34; id=&#34;submit-button&#34; href=&#34;loyall.ch/&#34;&gt;
+  &lt;p class=&#34;section-title&#34;&gt;Your message has been sent and we will get back to you as soon as possible&lt;/p&gt;
+  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised btn-primary&#34; href=&#34;loyall.ch/&#34;&gt;
         Go back to site
-      &lt;/a&gt;
-  
+  &lt;/a&gt;
+  &lt;br&gt;
+  &lt;br&gt;
 &lt;/div&gt;
 
   

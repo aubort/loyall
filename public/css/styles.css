@@ -49,7 +49,10 @@ section {
 
 .section-contact, #header-row-contact {
     /*width:100%;*/
-    padding: 0 20%;
+    /*padding: 0 20%;*/
+    padding-left:20%;
+    padding-right: 20%;
+    padding-bottom:10px;
 }
 
 .section-title.section-subtitle{
@@ -69,9 +72,11 @@ section {
 
 
 /*default header styles*/
-a.navigation__link {
+a.mdl-navigation__link.navigation__link {
     opacity: 0.7;
-    font-weight: 600;
+    font-weight: 500;
+    font-size:1em;
+    padding: 0 17px;
 }
 
 a.navigation__link:hover {
@@ -124,10 +129,13 @@ footer.mdl-mini-footer.default-footer {
  margin-top: 10px;
 }
 
+.card-page > .mdl-card__supporting-text{
+    width:auto;
+}
 /*default elements styles*/
 
 .mdl-button.btn-primary {
-    /*color: #63ba5f;*/
+    color: #fff;
     border-color: #27ae60;
     background:#27ae60;
     border-radius: 3px;
@@ -138,8 +146,8 @@ footer.mdl-mini-footer.default-footer {
 .mdl-button.btn-primary:hover {
     /*background: #FFF;*/
     color: #fff;
-    border-color: #49a145;
-    background: #49a145;
+    border-color: #2dc16c;
+    background: #2dc16c;
     /*border: 3px solid #49a145;*/
     /*color: #49a145;*/
 }
@@ -156,7 +164,6 @@ footer.mdl-mini-footer.default-footer {
 .mdl-card.address-card{
     width: 100%;
 }
-
 
 
 .language-selector {

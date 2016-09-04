@@ -3,11 +3,14 @@ package main
 import ( 
     "net/http"
     "encoding/json"
+    // "strings"
+    // "fmt"
 	
     "bytes"
     
     "appengine"
     "appengine/urlfetch"
+    
 )
 
 var (
@@ -25,10 +28,30 @@ type GrooveTicket struct {
 }
 
 
-func init() {
-	http.Handle("/", http.FileServer(http.Dir("public")))
-	http.HandleFunc("/contactus/", HandleContactus)
+// based on this: http://capotej.com/blog/2013/10/07/golang-http-handlers-as-middleware/
+
+func OurLoggingHandler(h http.Handler) http.Handler {
+  return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    // fmt.Println(*r.URL)
+    //c := appengine.NewContext(r)
+    
+    h.ServeHTTP(w, r)
+    
+  })
 }
+
+
+func init() {
+    
+    
+    fileHandler := http.FileServer(http.Dir("public"))
+    wrappedHandler := OurLoggingHandler(fileHandler)
+    http.Handle("/", wrappedHandler)
+	http.HandleFunc("/contactus/", HandleContactus)
+
+}
+
+
 
 func HandleContactus(w http.ResponseWriter, r *http.Request) {
     
