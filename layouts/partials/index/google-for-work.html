@@ -1,0 +1,63 @@
+{{ $sectionId := "2" }} 
+{{ range where .Site.Params.sections "sectionId" "==" $sectionId }} 
+{{ $section := . }}
+
+<a id="{{ $section.prettyName | urlize }}"></a>
+<section class="section-googleforwork">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <div class="section-title">Transform your Business</div>
+        </div>
+        <div class="mdl-cell mdl-cell--7-col">
+            <p class="section-title section-subtitle">
+                We support you with the move to Google for Work
+            </p>
+            <p>
+                Google for Work allows your teams to collaborate better and work more efficiently in the office or on the go.
+            </p>
+        </div>
+        <div class="mdl-cell mdl-cell--5-col">
+            <div class="mdl-card mdl-shadow--2dp full-width">
+                <div class="mdl-card__title">
+                    What we offer
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <ul class="mdl-list">
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon md-16 icon-done">done</i>
+                                Change Management
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon md-16 icon-done">done</i>
+                                Technical implementation
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon md-16 icon-done">done</i>
+                                Training
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-icon md-16 icon-done">done</i>
+                                Support 
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                   <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                        href="/google-for-work">
+                      Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

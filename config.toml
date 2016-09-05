@@ -20,9 +20,10 @@ publishdir = "public"
     
     [[params.sections]]
     sectionId = "1"
-    prettyName = "About us"
-    subtitle = "Trusted Advisor for your IT"
-    url = "/#about-us"
+    prettyName = "Home"
+    title = "Trusted Advisory for your IT"
+    subtitle = "Loyall Gmbh is your trusted partner for IT projects and Google Apps for Work and Education"
+    url = "/"
     
     [[params.sections]]
     sectionId = "2"

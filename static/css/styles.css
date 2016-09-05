@@ -1,55 +1,58 @@
 /*default document styles*/
-html > body {
+
+html {
     font-family: 'Roboto', sans-serif;
     background-color: #FAFAFA;
+    -webkit-font-smoothing: antialiased;
 }
 
 main {
     width:100%;
 }
+
 a {
     color: #ff4081;
     font-weight: 500;
     text-decoration: none;
 }
 
-#content {
-    width: 100%;
-}
-
-.content p {
-    max-width: 700px;
-    text-align: justify;
-}
-
 section, #header-row {
-    padding: 0 10%;
+    padding: 0 15%;
 }
 
-section {
+section.page-section {
     display:block;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 5em;
+    padding-top: 5em;
 }
 
 .section-title {
-    font-weight: 100;
-    font-size: 2em;
+    font-weight: 300;
+    font-size: 2.5em;
     line-height: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     margin:0;
 }
+
+.section-subtitle{
+    font-weight: 300;
+    font-size:1.6em;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
 .section-title.primary-color, h5.primary-color{
     color: #03A9F4;
 }
 
-
 .section-home{
     background-color: #27ae60;
-    text-align: center;
+    /*text-align: center;*/
     color: #fff;
-    font-size: 150%;
+    /*font-size: 150%;*/
+    height: 250px;
 }
 
 .section-contact, #header-row-contact {
@@ -60,10 +63,7 @@ section {
     padding-bottom:10px;
 }
 
-.section-title.section-subtitle{
-    font-size:80%;
-    line-height: 110%
-}
+
 
 
 @media (max-width: 1024px) {
@@ -77,14 +77,15 @@ section {
 
 
 /*default header styles*/
-a.mdl-navigation__link.navigation__link {
+.mdl-navigation__link.navigation__link {
     opacity: 0.7;
     font-weight: 500;
     font-size:1em;
     padding: 0 17px;
+    color: #424242;
 }
 
-a.navigation__link:hover {
+.navigation__link:hover {
     opacity: 1;
 }
 
@@ -107,9 +108,15 @@ a.navigation__link:hover {
     width: auto;
 }
 
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: #424242;
+}
+
 .mdl-layout__drawer .mdl-navigation.drawer-navigation{
     padding-top: 0px;
 }
+
+
 
 @media (max-width: 1024px) {
     #header-row {
@@ -165,6 +172,22 @@ footer.mdl-mini-footer.default-footer {
     height: 38px;
 }
 
+.mdl-card.full-width{
+    width: 100%;
+}
+
+.mdl-grid, .mdl-cell{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+ul.mdl-list, li.mdl-list__item{
+   padding:0px; 
+   min-height:30px;
+}
+.mdl-list__item-icon.icon-done{
+    color: #27ae60;
+}
 
 .mdl-card.address-card{
     width: 100%;
