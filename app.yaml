@@ -1,8 +1,6 @@
 runtime: go
 api_version: go1
 
-# application: loyall-www
-# version: staging
 
 handlers:
 - url: /.*
