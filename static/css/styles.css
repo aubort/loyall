@@ -7,6 +7,11 @@ html > body {
 main {
     width:100%;
 }
+a {
+    color: #ff4081;
+    font-weight: 500;
+    text-decoration: none;
+}
 
 #content {
     width: 100%;
