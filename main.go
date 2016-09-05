@@ -40,15 +40,12 @@ func OurLoggingHandler(h http.Handler) http.Handler {
   })
 }
 
-
 func init() {
-    
     
     fileHandler := http.FileServer(http.Dir("public"))
     wrappedHandler := OurLoggingHandler(fileHandler)
     http.Handle("/", wrappedHandler)
 	http.HandleFunc("/contactus/", HandleContactus)
-
 }
 
 
