@@ -1,8 +1,3 @@
-{{ $sectionId := "2" }} 
-{{ range where .Site.Params.sections "sectionId" "==" $sectionId }} 
-{{ $section := . }}
-
-<a id="{{ $section.prettyName | urlize }}"></a>
 <section class="section-googleforeducation">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
@@ -21,5 +16,3 @@
         </div>
     </div>
 </section>
-
-{{ end }}
