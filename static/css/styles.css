@@ -62,19 +62,16 @@ section, #header-content, .mdl-mini-footer__left-section {
     margin-bottom: 60px;
 }
 .arrow-down:after{
-    display: block;
-    position: absolute;
+    bottom: -55px;
+    left: calc(50% - 48px);
     content: '';
-    width: 60px;
-    height: 60px;
-    bottom: -30px;
-    left: calc(50% - 15px);
-    /*margin-left: -50px;*/
-    background-color: #27ae60; /** Change This Value ***/
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    z-index: 1;
+    position: absolute;
+    /*border-color: rgba(39,174,96 ,0.8) transparent transparent; */
+    border-style: solid; 
+    border-width: 55px 48px 0; 
+    width: 0;
+    height: 0;
+    border-color: inherit;
 }
 
 .secondary-section{
@@ -101,9 +98,16 @@ section, #header-content, .mdl-mini-footer__left-section {
 /*}*/
 
 #section-index__home{
-    background-color: #27ae60;
+    /*background-color: #27ae60;*/
     color: #fff;
     height: 250px;
+    border-color: rgb(66,184,116) transparent transparent;
+    border-width: 0px;
+    background:
+        linear-gradient( 135deg,
+          rgba(39,174,96 ,1),
+          rgba(39,174,96 ,0.8)
+        );
 }
 
 #section-index__googleforwork{
@@ -126,6 +130,17 @@ section, #header-content, .mdl-mini-footer__left-section {
 
 #section-page__googleforwork{
     background-color: rgba(0,188,212 ,1);
+    color: #fff;
+    height: 150px;
+    text-align: center;
+}
+
+#section-page__googleforeducation{
+    background:
+        linear-gradient( 135deg,
+          rgba(2,119,189 ,1),
+          rgba(2,119,189 ,0.7)
+        );
     color: #fff;
     height: 150px;
     text-align: center;
