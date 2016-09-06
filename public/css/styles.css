@@ -16,7 +16,11 @@ a {
     text-decoration: none;
 }
 
-section, #header-row {
+#header {
+    background-color: #fff;
+}
+
+section, #header-content, .mdl-mini-footer__left-section {
     padding: 0 15%;
 }
 
@@ -44,6 +48,7 @@ section.page-section {
     font-size:1.6em;
     padding-top:10px;
     padding-bottom: 10px;
+    line-height: 1.2em;
 }
 
 .section-title.primary-color, h5.primary-color{
@@ -56,6 +61,10 @@ section.page-section {
     height: 250px;
 }
 
+section {
+    padding-top: 30px;
+}
+
 section.page-section.section-home:after {
     display: block;
     position: absolute;
@@ -63,8 +72,8 @@ section.page-section.section-home:after {
     width: 60px;
     height: 60px;
     bottom: -30px;
-    left: 50%;
-    margin-left: -50px;
+    left: calc(50% - 15px);
+    /*margin-left: -50px;*/
     background-color: #27ae60; /** Change This Value ***/
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -162,7 +171,7 @@ section.page-section.section-home:after {
 
 
 @media (max-width: 1024px) {
-    #header-row {
+    #header-content {
         padding: 0px 1% 0px 50px;
     }
 }
@@ -174,6 +183,7 @@ section.page-section.section-home:after {
 /*default footer styles*/
 footer.mdl-mini-footer.default-footer {
     padding:20px 20px;
+    color:#fff;
 }
 
 
@@ -182,6 +192,7 @@ footer.mdl-mini-footer.default-footer {
 .card-layout__card.card-page {
  width:100%;   
  margin-top: 10px;
+ padding-top:30px;
 }
 
 .card-page > .mdl-card__supporting-text{
@@ -213,6 +224,25 @@ footer.mdl-mini-footer.default-footer {
     background: #FFF;
     color: #27ae60;
     height: 38px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.card-title__icon{
+    padding-top:20px;
+    
+}
+
+.services-card {
+    height:245px;
+    max-width:100%;
+}
+
+.mdl-card .card-subtitle{
+    font-weight:600;
 }
 
 .mdl-card.full-width{

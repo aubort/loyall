@@ -20,7 +20,7 @@ a {
     background-color: #fff;
 }
 
-section, #header-content {
+section, #header-content, .mdl-mini-footer__left-section {
     padding: 0 15%;
 }
 
@@ -192,6 +192,7 @@ footer.mdl-mini-footer.default-footer {
 .card-layout__card.card-page {
  width:100%;   
  margin-top: 10px;
+ padding-top:30px;
 }
 
 .card-page > .mdl-card__supporting-text{
