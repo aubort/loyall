@@ -2,12 +2,11 @@
 {{ range where .Site.Params.sections "sectionId" "==" $sectionId }} 
 {{ $section := . }}
 
-<section class="page-section section-home mdl-typography--text-center">
+<section class="top-section arrow-down" id="section-index__home">
     <a id="{{ $section.prettyName | urlize }}"></a>
-    
-    <div class="page-section section-title">{{ $section.title }}</div>
-    <p class="section-title section-subtitle">
+    <div class="section-title">{{ $section.title }}</div>
+    <div class="section-subtitle">
        {{ $section.subtitle }}
-    </p>
+    </div>
 </section>
 {{ end }}

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 	{{ partial "head.html" . }}
 </head>
@@ -7,12 +9,12 @@
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 		{{ partial "header.html" . }}
 		<main class="mdl-layout__content mdl-color-text--grey-700">
-		    <div class="mdl-card__title section-title primary-color">{{ .Title }}
-			</div>
       		{{ .Content }}
+      		{{ partial "footer.html" . }}
     	</main>
-		{{ partial "footer.html" . }}
+		
 	</div>
+	
 	{{ partial "footer_includes.html" . }}
 </body>
 </html>
