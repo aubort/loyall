@@ -44,6 +44,7 @@ section.page-section {
     font-size:1.6em;
     padding-top:10px;
     padding-bottom: 10px;
+    line-height: 1.2em;
 }
 
 .section-title.primary-color, h5.primary-color{
@@ -56,6 +57,10 @@ section.page-section {
     height: 250px;
 }
 
+section {
+    padding-top: 30px;
+}
+
 section.page-section.section-home:after {
     display: block;
     position: absolute;
@@ -63,8 +68,8 @@ section.page-section.section-home:after {
     width: 60px;
     height: 60px;
     bottom: -30px;
-    left: 50%;
-    margin-left: -50px;
+    left: calc(50% - 15px);
+    /*margin-left: -50px;*/
     background-color: #27ae60; /** Change This Value ***/
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
