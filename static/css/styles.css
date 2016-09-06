@@ -179,6 +179,7 @@ section.page-section.section-home:after {
 /*default footer styles*/
 footer.mdl-mini-footer.default-footer {
     padding:20px 20px;
+    color:#fff;
 }
 
 
@@ -218,6 +219,24 @@ footer.mdl-mini-footer.default-footer {
     background: #FFF;
     color: #27ae60;
     height: 38px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.card-title__icon{
+    padding-top:20px;
+    
+}
+
+.services-card {
+    height:245px;
+}
+
+.mdl-card .card-subtitle{
+    font-weight:600;
 }
 
 .mdl-card.full-width{
