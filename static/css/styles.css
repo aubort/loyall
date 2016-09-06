@@ -22,9 +22,8 @@ main {
     margin-left:auto;
 }
 
-.center-text{
-    text-align: center;
-}
+.center-text{ text-align: center; }
+.justify-text { text-align: justify;}
 
 em {
     font-style: normal;
@@ -128,7 +127,7 @@ section, #header-content, .mdl-mini-footer__left-section {
 #section-page__googleforwork{
     background-color: rgba(0,188,212 ,1);
     color: #fff;
-    height: 250px;
+    height: 150px;
     text-align: center;
 }
 
@@ -262,7 +261,7 @@ footer.mdl-mini-footer.default-footer {
 .card-title__icon{ padding-top:20px; }
 
 .services-card {
-    height:245px;
+    min-height:245px;
     width:100%;
 }
 
