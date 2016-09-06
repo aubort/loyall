@@ -16,7 +16,11 @@ a {
     text-decoration: none;
 }
 
-section, #header-row {
+#header {
+    background-color: #fff;
+}
+
+section, #header-content {
     padding: 0 15%;
 }
 
@@ -167,7 +171,7 @@ section.page-section.section-home:after {
 
 
 @media (max-width: 1024px) {
-    #header-row {
+    #header-content {
         padding: 0px 1% 0px 50px;
     }
 }
@@ -233,6 +237,7 @@ footer.mdl-mini-footer.default-footer {
 
 .services-card {
     height:245px;
+    max-width:100%;
 }
 
 .mdl-card .card-subtitle{
