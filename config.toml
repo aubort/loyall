@@ -1,14 +1,19 @@
 baseurl = "loyall.ch"
 languageCode = "en-us"
-title = "Loyall GmbH - IT Consulting and Google Apps Specialists"
+# title = "Loyall GmbH - IT Consulting and Google Apps Specialists"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
+
+[Author]
+    name = "Pascal Aubort"
+DefaultContentLanguage = "en"
+GoogleAnalytics = "UA-82408067-1"
+
+
 [params]
     description = ""
-    author = "Pascal Aubort"
-    googleAnalytics = "UA-82408067-1"
     #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
     
     languages = ["Français", "Deutsch", "English"]
