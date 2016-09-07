@@ -1,12 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Loyall GmbH - IT Consulting and Google Apps Specialists</title>
-    <link>loyall.ch/</link>
-    <description>Recent content on Loyall GmbH - IT Consulting and Google Apps Specialists</description>
+    <title></title>
+    <link>loyall.ch/index.xml</link>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="loyall.ch/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google for Work</title>
+      <link>/loyall.ch/google-for-education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/loyall.ch/google-for-education/</guid>
+      <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforeducation&#34;&gt;
+    &lt;div class=&#34;section-title&#34;&gt;
+        For your school
+    &lt;/div&gt;
+    &lt;p class=&#34;larger-text center-text&#34;&gt;
+        Google Apps for Education provides a set free set of &lt;em&gt;online productivity tools&lt;/em&gt; that will help your teams work more efficiently and everywhere they are. You will discover more about which products are included with Google Apps for Work 
+        &lt;a href=&#34;https://apps.google.com/&#34; target=&#34;_blank&#34;&gt;here.&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;secondary-section&#34;&gt;
+    &lt;div class=&#34;mdl-grid&#34;&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--12-col&#34;&gt;
+            &lt;div class=&#34;section-title&#34;&gt;Why choose Loyall&lt;/div&gt;
+            &lt;p&gt;Our team is &lt;a&gt;Google Apps Certified Administrators&lt;/a&gt; and will help you in the implementation and transition to the cloud&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;people&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Change Management&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    In order to maximize user adoption of Google for Work products, we help you with the communication strategy before, during and after the deployment of Google Apps for Work.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;settings&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Technical implementation&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    We take care of the domain(s) management, users provisioning, e-mail routing and delivery setup as well as legacy systems migration. 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;school&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Tailored training&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    We provide training tailored to your needs, whether it be for your technical staff or your end-users. 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;all_inclusive&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Continuous improvement&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    Moving to a new system requires continuous improvement and analysis. We help you analyze your users experience and suggest improvement plans. 
+                    We also provide support 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>Google for Work</title>
@@ -14,9 +88,70 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/loyall.ch/google-for-work/</guid>
-      <description>&lt;section&gt;
-&lt;h1&gt;test&lt;/h1&gt;    
-    
+      <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforwork&#34;&gt;
+    &lt;div class=&#34;section-title&#34;&gt;
+        Transform your Business
+    &lt;/div&gt;
+    &lt;p class=&#34;larger-text center-text&#34;&gt;
+        Google Apps for Work provides a set of &lt;em&gt;online productivity tools&lt;/em&gt; that will help your teams work more efficiently and everywhere they are. You will discover more about which products are included with Google Apps for Work 
+        &lt;a href=&#34;https://apps.google.com/&#34; target=&#34;_blank&#34;&gt;here.&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;secondary-section&#34;&gt;
+    &lt;div class=&#34;mdl-grid&#34;&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--12-col&#34;&gt;
+            &lt;div class=&#34;section-title&#34;&gt;Why choose Loyall&lt;/div&gt;
+            &lt;p&gt;Our team is &lt;a&gt;Google Apps Certified Administrators&lt;/a&gt; and will help you in the implementation and transition to the cloud&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;people&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Change Management&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    In order to maximize user adoption of Google for Work products, we help you with the communication strategy before, during and after the deployment of Google Apps for Work.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;settings&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Technical implementation&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    We take care of the domain(s) management, users provisioning, e-mail routing and delivery setup as well as legacy systems migration. 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;school&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Tailored training&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    We provide training tailored to your needs, whether it be for your technical staff or your end-users. 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
+            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
+                &lt;div class=&#34;card-title__icon&#34;&gt;
+                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;all_inclusive&lt;/i&gt;
+                    &lt;p class=&#34;section-subtitle&#34;&gt;Continuous improvement&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
+                    Moving to a new system requires continuous improvement and analysis. We help you analyze your users experience and suggest improvement plans. 
+                    We also provide support 
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
 &lt;/section&gt;
 </description>
     </item>
