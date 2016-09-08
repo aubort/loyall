@@ -4,6 +4,8 @@ languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
+googleAnalytics = "UA-82408067-1"
+
 
 
 [Author]
