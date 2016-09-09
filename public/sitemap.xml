@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>/loyall.ch/</loc>
-  </url>
-  
-  <url>
-    <loc>/loyall.ch/google-for-education/</loc>
-  </url>
-  
-  <url>
-    <loc>/loyall.ch/google-for-work/</loc>
-  </url>
-  
-  <url>
-    <loc>/loyall.ch/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>/loyall.ch/confirmation/</loc>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>loyall.ch/en/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>loyall.ch/de/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

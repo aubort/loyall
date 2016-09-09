@@ -1,6 +1,5 @@
 baseurl = "loyall.ch"
-languageCode = "en-us"
-# title = "Loyall GmbH - IT Consulting and Google Apps Specialists"
+#languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
@@ -8,15 +7,25 @@ googleAnalytics = "UA-82408067-1"
 
 [Author]
     name = "Pascal Aubort"
-DefaultContentLanguage = "en"
 GoogleAnalytics = "UA-82408067-1"
 
+#################### Languages ####################
+IsMultiLingual = true
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = true
+
+[Languages]
+    [Languages.en]
+        weight = 1
+        title = "Loyall - IT Consulting and Google Apps Services"
+    
+    [Languages.de]
+        weight = 2
+        title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
 
 [params]
     description = ""
     #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
-    
-    languages = ["Français", "Deutsch", "English"]
     
     [params.layout]
     headerColor = "mdl-color--white"
