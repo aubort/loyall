@@ -43,12 +43,17 @@ DefaultContentLanguageInSubdir = true
     
     [[params.sections]]
     sectionId = "2"
+    prettyName = "Services"
+    path = "services"
+    
+    [[params.sections]]
+    sectionId = "3"
     prettyName = "Google for Work"
     subtitle = "Google for Work"
     path = "google-for-work"
     
     [[params.sections]]
-    sectionId = "3"
+    sectionId = "4"
     prettyName = "Google for Education"
     subtitle = "Google for Education"
     path = "google-for-education"
