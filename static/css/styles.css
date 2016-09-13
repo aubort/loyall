@@ -271,7 +271,20 @@ footer.mdl-mini-footer.default-footer {
 
 .material-icons.colored { color: rgba(0,188,212 ,1); }
 .material-icons.dark {color: rgba(69,90,100 ,1); }
+.mdl-list__item-avatar.list-large-icons {
+    /*font-size:3.5em;*/
+    width:65px;
+    height:65px;
+    /*font-size:50px;*/
+    text-align: center;
+    line-height: 130%;
+    background-color:#ECEFF1;
+    
+}
+
 .card-title__icon{ padding-top:20px; }
+
+
 
 .services-card {
     min-height:265px;
