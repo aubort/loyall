@@ -270,6 +270,7 @@ footer.mdl-mini-footer.default-footer {
 .material-icons.md-48 { font-size: 48px; }
 
 .material-icons.colored { color: rgba(0,188,212 ,1); }
+.material-icons.dark {color: rgba(69,90,100 ,1); }
 .card-title__icon{ padding-top:20px; }
 
 .services-card {

@@ -18,10 +18,12 @@ DefaultContentLanguageInSubdir = true
     [Languages.en]
         weight = 1
         title = "Loyall - IT Consulting and Google Apps Services"
+        languageName = "English"
     
     [Languages.de]
         weight = 2
         title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
+        languageName = "Deutsch"
 
 [params]
     description = ""
@@ -37,19 +39,19 @@ DefaultContentLanguageInSubdir = true
     prettyName = "Home"
     title = "Trusted Advisory for your IT"
     subtitle = "Loyall Gmbh is your trusted partner for IT projects and Google Apps for Work and Education"
-    url = ""
+    path = ""
     
     [[params.sections]]
     sectionId = "2"
     prettyName = "Google for Work"
     subtitle = "Google for Work"
-    url = "google-for-work"
+    path = "google-for-work"
     
     [[params.sections]]
     sectionId = "3"
     prettyName = "Google for Education"
     subtitle = "Google for Education"
-    url = "google-for-education"
+    path = "google-for-education"
     
     # [[params.sections]]
     # sectionId = "3"

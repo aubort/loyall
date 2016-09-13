@@ -1,29 +1,18 @@
 <header id="header" class="mdl-layout__header">
   <div class="mdl-layout__header-row header-row" id="header-content">
-    <a href="{{ .LanguagePrefix }}" class="header-logo"></a>
+    <a href="{{.LanguagePrefix }}" class="header-logo"></a>
     
     <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
         {{ range .Site.Params.sections }}
-          <a class="mdl-navigation__link navigation__link" href="{{ .LanguagePrefix | .url }}">
+          <a class="mdl-navigation__link navigation__link" href="{{ .path | relLangURL }}">
             {{ .prettyName }}
-          </a> 
+          </a>
         {{ end }}
-        
-
-  <!--      <div class="mdl-navigation__link language-selector">-->
-  <!--        Right aligned menu below button-->
-  <!--        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">-->
-  <!--<i class="material-icons">language</i>-->
-  <!--    </button>-->
-  <!--        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">-->
-  <!--          {{ range .Site.Params.languages }}-->
-  <!--          <li class="mdl-menu__item">{{ . }}</li>-->
-  <!--          {{ end }}-->
-  <!--        </ul>-->
-  <!--      </div>-->
+        <a></a>
       </nav>
       {{ partial "contact-us-button.html" }}
+      {{ partial "language-selector.html" .}}
 </header>
 
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
@@ -31,7 +20,8 @@
     <a class="mdl-navigation__link" href="/"><i class="material-icons">home</i></a>
     
     {{ range .Site.Params.sections }}
-        <a class="mdl-navigation__link navigation__link" href="{{ .LanguagePrefix | .url }}">
+      {{ $path := "a" }}
+        <a class="mdl-navigation__link navigation__link" href="{{ .path | relLangURL }}">
           {{ .prettyName }}</a> 
     {{ end }} 
   </nav>
