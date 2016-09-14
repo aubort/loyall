@@ -1,5 +1,42 @@
+# General
+
+- id: learn_more
+  translation: "Learn more"
+
 - id: find_out_more
   translation: "Want to find out more?"
   
 - id: free_demo
   translation: "Ask for a free demo!"
+  
+  
+# Index Page (Homepage)
+- id: index__title
+  translation: "Trusted Advisors for your IT"
+  
+- id: index__subtitle
+  translation: "Loyall Gmbh is your trusted partner for IT projects and Google Apps for Work and Education"
+  
+- id: index_services_title
+  translation: "Our Services"
+
+- id: index_services_subtitle
+  translation: "Discover our range of services from IT project management to Google Apps Integration for your business or educational institution"
+  
+- id: index_services_projects_title
+  translation: "Realize your projects"
+  
+- id: index_services_projects_text
+  translation: "We provide resources and take care of your IT projects so that you can focus on your core business."
+  
+- id: index_services_online_title
+  translation: "Improve your online presence"
+
+- id: index_services_online_text
+  translation: "Whether you are a business or an institution, we help you own and manage your listing on Google Maps. "
+  
+- id: index_services_cloud_title
+  translation: "Need your private cloud?"
+
+- id: index_services_cloud_text
+  translation: "Our partners at <a href='http://a4p.ch'>a4p.ch</a> are experts in private cloud and building in-house datacenters tailored to your needs. "

@@ -1,9 +1,9 @@
 <section class="secondary-section">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col">
-            <div class="section-title">Our Services</div>
+            <div class="section-title">{{ i18n "index_services_title" }}</div>
             <p class="section-title section-subtitle">
-                Discover our range of services from IT project management to Google Apps Integration for your business or educational institution
+                {{ i18n "index_services_subtitle" }}
             </p>
         </div>
         <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
@@ -12,13 +12,13 @@
                     <i class="material-icons md-48">done_all</i>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <span class="card-subtitle">Realize your projects</span>
-                    <p>We provide resources and take care of your IT projects so that you can focus on your core business.</p>
+                    <span class="card-subtitle">{{ i18n "index_services_projects_title" }}</span>
+                    <p>{{ i18n "index_services_projects_text" }}</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
                         href="{{ "/services#project-management" | relLangURL }}">
-                      Learn more
+                      {{ i18n "learn_more" }}
                     </a>
                 </div>
             </div>
@@ -29,13 +29,13 @@
                     <i class="material-icons md-48">store_mall_directory</i>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <span class="card-subtitle">Improve your online presence</span>
-                    <p>Whether you are a business or an institution, we help you own and manage your listing on Google Maps. </p>
+                    <span class="card-subtitle">{{ i18n "index_services_online_title" }}</span>
+                    <p>{{ i18n "index_services_online_text" }}</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
                         href="{{ "/services#improve-online-presence" | relLangURL }}">
-                      Learn more
+                      {{ i18n "learn_more" }}
                     </a>
                 </div>
             </div>
@@ -46,13 +46,13 @@
                     <i class="material-icons md-48">wb_cloudy</i>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <span class="card-subtitle">Need your private cloud?</span>
-                    <p>Our partners at <a href="http://a4p.ch">a4p.ch</a> are experts in private cloud and building in-house datacenters tailored to your needs. </p>
+                    <span class="card-subtitle">{{ i18n "index_services_cloud_title" }}</span>
+                    <p>{{ i18n "index_services_cloud_text" | safeHTML}}</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
                         href="http://a4p.ch" target="_blank">
-                      Learn more
+                      {{ i18n "learn_more" }}
                     </a>
                 </div>
             </div>
