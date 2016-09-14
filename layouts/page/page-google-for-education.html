@@ -1,0 +1,65 @@
+{{ define "main" }}
+<section class="top-section" id="section-page__googleforwork">
+    <div class="section-title">
+        {{ .Title | safeHTML }}
+    </div>
+    <p class="larger-text center-text">
+        {{ .Params.subtitle | safeHTML }}
+    </p>
+</section>
+
+<section class="secondary-section">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+            <div class="section-title">{{ .Params.section_1_title }}</div>
+            <p>{{ .Params.section_1_text | safeHTML}}</p>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">people</i>
+                    <p class="section-subtitle">{{ .Params.card_change_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_change_text }}
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">settings</i>
+                    <p class="section-subtitle">{{ .Params.card_implement_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_implement_text }}
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">school</i>
+                    <p class="section-subtitle">{{ .Params.card_training_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_training_text }}
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">all_inclusive</i>
+                    <p class="section-subtitle">{{ .Params.card_improve_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_improve_text }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "free-demo.html" . }}
+
+{{ end }}
