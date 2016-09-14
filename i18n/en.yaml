@@ -39,4 +39,37 @@
   translation: "Need your private cloud?"
 
 - id: index_services_cloud_text
-  translation: "Our partners at <a href='http://a4p.ch'>a4p.ch</a> are experts in private cloud and building in-house datacenters tailored to your needs. "
+  translation: "Our partners at <a href='http://a4p.ch'>a4p.ch</a> are experts in private cloud and building in-house datacenters tailored to your needs."
+  
+- id: index_googleforwork_title
+  translation: "Transform your Business"
+  
+- id: index_googleforwork_subtitle
+  translation: "We support you with the move to Google for Work"
+
+- id: index_googleforwork_text
+  translation: "Google for Work allows your teams to collaborate better and work more efficiently and securely in the office or on the go."
+
+- id: index_googleforwork_card_title
+  translation: "What we offer"
+  
+- id: index_googleforwork_card_item1
+  translation: "Change Management"
+
+- id: index_googleforwork_card_item2
+  translation: "Technical implementation"
+  
+- id: index_googleforwork_card_item3
+  translation: "Tailored training for your teams"
+  
+- id: index_googleforwork_card_item4
+  translation: "Support"
+  
+- id: index_googleforedu_title
+  translation: "For your school"
+
+- id: index_googleforedu_subtitle
+  translation: "We offer services to help your school smoothly transition to Google Apps for Education"
+
+- id: index_googleforedu_text
+  translation: "Google Apps for Education in combination to Google Chromebooks is a secure and ideal solution for your educational institution."

@@ -37,8 +37,6 @@ DefaultContentLanguageInSubdir = true
     [[params.sections]]
     sectionId = "1"
     prettyName = "Home"
-    title = "Trusted Advisory for your IT"
-    subtitle = "Loyall Gmbh is your trusted partner for IT projects and Google Apps for Work and Education"
     path = ""
     
     [[params.sections]]
