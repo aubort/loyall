@@ -18,6 +18,10 @@
   </url>
   
   <url>
+    <loc>/%20/services/</loc>
+  </url>
+  
+  <url>
     <loc>/%20/confirmation/</loc>
   </url>
   
