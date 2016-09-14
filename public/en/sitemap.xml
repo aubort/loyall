@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/%20/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>/%20/google-for-education/</loc>
+    <loc>/google-for-education/</loc>
   </url>
   
   <url>
-    <loc>/%20/google-for-work/</loc>
+    <loc>/google-for-work/</loc>
   </url>
   
   <url>
-    <loc>/%20/contact/</loc>
+    <loc>/contact/</loc>
   </url>
   
   <url>
-    <loc>/%20/services/</loc>
+    <loc>/services/</loc>
   </url>
   
   <url>
-    <loc>/%20/confirmation/</loc>
+    <loc>/confirmation/</loc>
   </url>
   
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Loyall - IT Beratung und Google Apps Dienstleistungen</title>
-    <link>%20/de/index.xml</link>
+    <link>/de/index.xml</link>
     <description>Recent content on Loyall - IT Beratung und Google Apps Dienstleistungen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="%20/de/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Google for Work</title>
-      <link>/%20/de/google-for-education/</link>
+      <link>/de/google-for-education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/de/google-for-education/</guid>
+      <guid>/de/google-for-education/</guid>
       <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforeducation&#34;&gt;
     &lt;div class=&#34;section-title&#34;&gt;
         For your school
@@ -25,7 +25,7 @@
     &lt;div class=&#34;mdl-grid&#34;&gt;
         &lt;div class=&#34;mdl-cell mdl-cell--12-col&#34;&gt;
             &lt;div class=&#34;section-title&#34;&gt;Our range of services for educational institutions&lt;/div&gt;
-            &lt;p&gt;In addition to &lt;a href=&#34; /%20/google-for-work/&#34;&gt;the services we provide&lt;/a&gt; to Google Apps for Work customers, we are here to help your institution with the move to Cloud solutions.&lt;/p&gt;
+            &lt;p&gt;In addition to &lt;a href=&#34;/google-for-work/&#34;&gt;the services we provide&lt;/a&gt; to Google Apps for Work customers, we are here to help your institution with the move to Cloud solutions.&lt;/p&gt;
         &lt;/div&gt;
         &lt;ul class=&#34;mdl-list&#34;&gt;
             &lt;li class=&#34;mdl-list__item mdl-list__item--three-line&#34;&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>Google for Work</title>
-      <link>/%20/de/google-for-work/</link>
+      <link>/de/google-for-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/de/google-for-work/</guid>
+      <guid>/de/google-for-work/</guid>
       <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforwork&#34;&gt;
     &lt;div class=&#34;section-title&#34;&gt;
         Transform your Business
@@ -149,10 +149,10 @@
     
     <item>
       <title>Professional services</title>
-      <link>/%20/de/services/</link>
+      <link>/de/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/de/services/</guid>
+      <guid>/de/services/</guid>
       <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__services&#34;&gt;
     &lt;div class=&#34;section-title&#34;&gt;
         Professional services

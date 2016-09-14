@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Loyall - IT Consulting and Google Apps Services</title>
-    <link>%20/index.xml</link>
+    <link>/index.xml</link>
     <description>Recent content on Loyall - IT Consulting and Google Apps Services</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="%20/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Google for Work</title>
-      <link>/%20/google-for-education/</link>
+      <link>/google-for-education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/google-for-education/</guid>
+      <guid>/google-for-education/</guid>
       <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforeducation&#34;&gt;
     &lt;div class=&#34;section-title&#34;&gt;
         For your school
@@ -25,7 +25,7 @@
     &lt;div class=&#34;mdl-grid&#34;&gt;
         &lt;div class=&#34;mdl-cell mdl-cell--12-col&#34;&gt;
             &lt;div class=&#34;section-title&#34;&gt;Our range of services for educational institutions&lt;/div&gt;
-            &lt;p&gt;In addition to &lt;a href=&#34; /%20/google-for-work/&#34;&gt;the services we provide&lt;/a&gt; to Google Apps for Work customers, we are here to help your institution with the move to Cloud solutions.&lt;/p&gt;
+            &lt;p&gt;In addition to &lt;a href=&#34;/google-for-work/&#34;&gt;the services we provide&lt;/a&gt; to Google Apps for Work customers, we are here to help your institution with the move to Cloud solutions.&lt;/p&gt;
         &lt;/div&gt;
         &lt;ul class=&#34;mdl-list&#34;&gt;
             &lt;li class=&#34;mdl-list__item mdl-list__item--three-line&#34;&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>Google for Work</title>
-      <link>/%20/google-for-work/</link>
+      <link>/google-for-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/google-for-work/</guid>
+      <guid>/google-for-work/</guid>
       <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforwork&#34;&gt;
     &lt;div class=&#34;section-title&#34;&gt;
         Transform your Business
@@ -149,10 +149,10 @@
     
     <item>
       <title>How can we help?</title>
-      <link>/%20/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/contact/</guid>
+      <guid>/contact/</guid>
       <description>&lt;script type=&#34;text/javascript&#34;&gt;
   var onloadCallback = function() {
     grecaptcha.render(&#39;g-recaptcha&#39;, {
@@ -215,10 +215,10 @@
     
     <item>
       <title>Professional services</title>
-      <link>/%20/services/</link>
+      <link>/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/services/</guid>
+      <guid>/services/</guid>
       <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__services&#34;&gt;
     &lt;div class=&#34;section-title&#34;&gt;
         Professional services
@@ -266,13 +266,13 @@
     
     <item>
       <title>Thank you!</title>
-      <link>/%20/confirmation/</link>
+      <link>/confirmation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/%20/confirmation/</guid>
+      <guid>/confirmation/</guid>
       <description>&lt;div class=&#34;mdl-typography--text-center&#34;&gt;
   &lt;p class=&#34;section-subtitle&#34;&gt;Your message has been sent and we will get back to you as soon as possible&lt;/p&gt;
-  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised btn-primary&#34; href=&#34; /&#34;&gt;
+  &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised btn-primary&#34; href=&#34;/&#34;&gt;
         Go back to site
   &lt;/a&gt;
   &lt;br&gt;
