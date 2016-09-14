@@ -2,6 +2,9 @@
 
 - id: learn_more
   translation: "Learn more"
+  
+- id: back_to_site
+  translation: "Go back to site"
 
 - id: find_out_more
   translation: "Want to find out more?"
