@@ -79,12 +79,18 @@ section, #header-content, .mdl-mini-footer__left-section {
     padding-bottom: 30px;
 }
 
+.section-white { background-color: #fff; }
+
 .section-title {
     font-weight: 300;
     font-size: 2.7em;
     line-height: 100%;
     padding-bottom:15px;
     margin:0;
+}
+
+.padded-section-title {
+    padding-top:20px;
 }
 
 .section-subtitle{
