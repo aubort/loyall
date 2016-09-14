@@ -143,10 +143,19 @@ section, #header-content, .mdl-mini-footer__left-section {
     text-align: center;
 }
 
+#section-page__services{
+    background:
+        linear-gradient( 135deg,
+          rgba(2,119,189 ,1),
+          rgba(2,119,189 ,0.7)
+        );
+    color: #fff;
+    height: 150px;
+    text-align: center;
+}
+
 
 .section-contact, #header-row-contact {
-    /*width:100%;*/
-    /*padding: 0 20%;*/
     padding-left:20%;
     padding-right: 20%;
     padding-bottom:10px;
@@ -291,6 +300,10 @@ footer.mdl-mini-footer.default-footer {
     width:100%;
 }
 
+.transparent-card {
+    background-color: transparent;
+}
+
 .mdl-card .card-subtitle{
     font-weight:600;
 }
@@ -317,10 +330,11 @@ ul.mdl-list, li.mdl-list__item{
 }
 
 
-.language-selector {
+.language-selector, .language-selector > span {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 8px;
+    color: rgba(69,90,100 ,1);
 }
 
 .g-recaptcha{
