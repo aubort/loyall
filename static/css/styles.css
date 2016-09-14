@@ -336,11 +336,15 @@ ul.mdl-list, li.mdl-list__item{
 }
 
 
-.language-selector, .language-selector > span {
+.language-selector  {
     position: absolute;
     top: 0;
-    right: 8px;
-    color: rgba(69,90,100 ,1);
+    right: 0px;
+}
+
+.language-selector > button { color: rgba(69,90,100 ,1);}
+.language-selector > button:hover {
+    background-color: #fff;
 }
 
 .g-recaptcha{

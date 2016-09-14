@@ -1,8 +1,8 @@
 <div class="mdl-navigation__link language-selector">
-  <button id="menu-languages" class="mdl-button mdl-js-button mdl-button--icon">
-    <i class="material-icons dark">language</i>
+  <button id="menu-languages" class="mdl-button">
+    <i class="material-icons">language</i>
+    <label>{{ .Language.LanguageName }}</label>
   </button>
-  <span class="">{{ .Lang }}</span>
   
   <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-languages">
     {{ range .Site.Languages }}
