@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<section class="top-section" id="section-page__services">
+    <div class="section-title">
+        {{ .Title }}
+    </div>
+    <p class="section-subtitle">
+        {{ .Params.subtitle }}
+    </p>
+</section>
+
+<section class="secondary-section">
+    <a id="project-management"></a>
+    <div class="center-text">
+        <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">done_all</i>    
+    </div> 
+    <div class="section-title padded-section-title center-text">{{ .Params.section_projects__title }}</div>
+    <br>
+    <p class="center-text larger-text">{{ .Params.section_projects__text }}</p>
+</section>
+<section class="secondary-section section-white">
+    <a id="learn-about-it"></a>
+    <div class="center-text">
+        <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">school</i>    
+    </div>
+    <div class="section-title padded-section-title center-text">{{ .Params.section_learn__title }}</div>
+    <p class="center-text larger-text">{{ .Params.section_learn__text }}</p>
+</section>
+<section class="secondary-section">
+    <a id="improve-online-presence"></a>
+    <div class="center-text">
+        <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">store</i>    
+    </div>
+    
+    <div class="section-title padded-section-title center-text">{{ .Params.section_presence__title }}</div>
+    <p class="center-text larger-text">{{ .Params.section_presence__text }}</p>
+</section>
+{{ end }}

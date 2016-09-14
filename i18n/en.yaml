@@ -1,2 +1,5 @@
-- id: home
-  translation: "Home"
+- id: find_out_more
+  translation: "Want to find out more?"
+  
+- id: free_demo
+  translation: "Ask for a free demo!"
