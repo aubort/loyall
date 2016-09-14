@@ -22,7 +22,22 @@
         <a class="mdl-navigation__link navigation__link" href="{{ .path | relLangURL }}">
           {{ .prettyName }}</a>
     {{ end }} 
+  
+  <div class="mdl-navigation__link">
+    {{ $currentLanguage := .Language.LanguageName }}
+    {{ range .Site.Languages }}
+      {{ if ne $currentLanguage .LanguageName }}
+        <a href="{{ printf "%s%s" "/" .Lang }}">{{ .LanguageName }}</a>
+      {{ end }}
+    {{ end }}
+    
+  </div>
+  
+  <!--{{ range .Site.Languages }}-->
+  <!--    <a href="{{ printf "%s%s" "/" .Lang }}">{{ .LanguageName }}</a>-->
+  <!--  {{ end }}-->
   </nav>
+  
   <!--<ul>-->
   <!--      {{ range .Site.Params.languages }}-->
   <!--      <li class="mdl-navigation__link navigation__link">{{ . }}</li>-->
