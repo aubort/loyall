@@ -205,7 +205,7 @@ section, #header-content, .mdl-mini-footer__left-section {
     opacity: 0.7;
     font-weight: 500;
     font-size:1em;
-    padding: 0 17px;
+    padding: 0 10px;
     color: #424242;
 }
 
@@ -354,10 +354,10 @@ ul.mdl-list, li.mdl-list__item{
 }
 
 
-.language-selector  {
+.mdl-navigation__link.language-selector  {
     position: absolute;
-    top: 0;
-    right: 0px;
+    top:0;
+    right:0;
 }
 
 .language-selector > button { color: rgba(69,90,100 ,1);}
