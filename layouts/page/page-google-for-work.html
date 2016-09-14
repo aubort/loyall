@@ -1,54 +1,65 @@
 {{ define "main" }}
-
-<section class="top-section" id="section-page__googleforeducation">
+<section class="top-section" id="section-page__googleforwork">
     <div class="section-title">
-        For your school
+        {{ .Title | safeHTML }}
     </div>
     <p class="larger-text center-text">
-        Google Apps for Education provides a powerful suite of online collaboration tools for your administration staff, teachers and students.
+        {{ .Params.subtitle | safeHTML }}
     </p>
 </section>
+
 <section class="secondary-section">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col">
-            <div class="section-title">Our range of services for educational institutions</div>
-            <p>In addition to <a href="{{< ref "google-for-work.html" >}}">the services we provide</a> to Google Apps for Work customers, we are here to help your institution with the move to Cloud solutions.</p>
+            <div class="section-title">{{ .Params.section_1_title }}</div>
+            <p>{{ .Params.section_1_text | safeHTML}}</p>
         </div>
-        <ul class="mdl-list">
-            <li class="mdl-list__item mdl-list__item--three-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">school</i>
-                  <span>Customized training</span>
-                  <span class="mdl-list__item-text-body">
-                    We help you get the most out of Google Apps for Education by providing training for your administration staff, teachers and students.
-                  </span>
-                </span>
-            </li>
-        </ul>
-        <ul class="mdl-list">
-            <li class="mdl-list__item mdl-list__item--three-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">laptop_chromebook</i>
-                  <span>Chromebooks</span>
-                  <span class="mdl-list__item-text-body">
-                    <a href="https://www.google.com/chromebook/" target="_blank">Chromebooks</a> are ideal computers for your staff and students as it is built to work seamlessly with Google Apps. We help you purchase, configure, deploy and administer the hardware within your institution.
-                  </span>
-                </span>
-            </li>
-        </ul>
-        <ul class="mdl-list">
-            <li class="mdl-list__item mdl-list__item--three-line">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">help</i>
-                  <span>Administration and Support</span>
-                  <span class="mdl-list__item-text-body">
-                    You can choose whether you want to administer your Google Apps environment yourself or leave it to us. We are here to support you.
-                  </span>
-                </span>
-            </li>
-        </ul>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">people</i>
+                    <p class="section-subtitle">{{ .Params.card_change_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_change_text }}
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">settings</i>
+                    <p class="section-subtitle">{{ .Params.card_implement_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_implement_text }}
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">school</i>
+                    <p class="section-subtitle">{{ .Params.card_training_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_training_text }}
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+            <div class="mdl-card mdl-shadow--2dp services-card center-text">
+                <div class="card-title__icon">
+                    <i class="material-icons md-48 colored">all_inclusive</i>
+                    <p class="section-subtitle">{{ .Params.card_improve_title }}</p>
+                </div>
+                <div class="mdl-card__supporting-text justify-text">
+                    {{ .Params.card_improve_text }}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-{{ partial "free-demo.html" . }}
+{{ partial "free-demo.html" .}}
 
 {{ end }}
