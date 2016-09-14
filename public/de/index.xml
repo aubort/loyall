@@ -153,46 +153,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/de/services/</guid>
-      <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__services&#34;&gt;
-    &lt;div class=&#34;section-title&#34;&gt;
-        Professional services
-    &lt;/div&gt;
-    &lt;p class=&#34;section-subtitle&#34;&gt;
-        We are here to support you realize successful projects
-    &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&#34;secondary-section&#34;&gt;
-    &lt;a href=&#34;#project-management&#34;&gt;&lt;/a&gt;
-    &lt;div class=&#34;center-text&#34;&gt;
-        &lt;i class=&#34;material-icons mdl-list__item-avatar list-large-icons colored md-48&#34;&gt;done_all&lt;/i&gt;    
-    &lt;/div&gt; 
-    &lt;div class=&#34;section-title padded-section-title center-text&#34;&gt;Realize your projects&lt;/div&gt;
-    &lt;br&gt;
-    &lt;p class=&#34;center-text larger-text&#34;&gt;At Loyall we have experience in IT project management. And we know how difficult it can be to realize projects with limited internal resources. 
-        Whether you need a neutral opinion on a project you are working on or want us manage your project, we are here to support you.
-    &lt;/p&gt;
-&lt;/section&gt;
-&lt;section class=&#34;secondary-section section-white&#34;&gt;
-    &lt;div class=&#34;center-text&#34;&gt;
-        &lt;i class=&#34;material-icons mdl-list__item-avatar list-large-icons colored md-48&#34;&gt;school&lt;/i&gt;    
-    &lt;/div&gt;
-    &lt;div class=&#34;section-title padded-section-title center-text&#34;&gt;Learn about IT&lt;/div&gt;
-    &lt;p class=&#34;center-text larger-text&#34;&gt;Keeping your teams up to date with technology is a good way to keep the motivation and productivity levels high.
-        We provide trainings - individual or in groups - tailored to your audience.
-    &lt;/p&gt;
-&lt;/section&gt;
-&lt;section class=&#34;secondary-section&#34;&gt;
-    &lt;div class=&#34;center-text&#34;&gt;
-        &lt;i class=&#34;material-icons mdl-list__item-avatar list-large-icons colored md-48&#34;&gt;store&lt;/i&gt;    
-    &lt;/div&gt;
-    &lt;div class=&#34;section-title padded-section-title center-text&#34;&gt;Improve your local online presence&lt;/div&gt;
-    &lt;p class=&#34;center-text larger-text&#34;&gt;Your local online presence is crucial for customers to find your business. This starts with maintaining your Google my Business page. 
-                For a flat fee, we help you verify your business, update the informations such as opening hours, website etc.
-                We also provide trainings on how to maintain your page.
-    &lt;/p&gt;
-&lt;/section&gt;
-</description>
+      <description></description>
     </item>
     
   </channel>

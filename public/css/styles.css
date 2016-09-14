@@ -160,6 +160,24 @@ section, #header-content, .mdl-mini-footer__left-section {
     text-align: center;
 }
 
+#section-partial__find-out-more {
+    background:
+        linear-gradient( to right,
+          rgba(2,119,189 ,1),
+          rgba(2,119,189 ,0.7)
+        ),
+        url(/img/handsup.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 200px;
+    color: #fff;
+    font-weight:400;
+    display:flex;
+    align-items: center;
+}
+
 
 .section-contact, #header-row-contact {
     padding-left:20%;

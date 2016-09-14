@@ -10,10 +10,6 @@
   </url>
   
   <url>
-    <loc>/google-for-work/</loc>
-  </url>
-  
-  <url>
     <loc>/contact/</loc>
   </url>
   
@@ -23,6 +19,10 @@
   
   <url>
     <loc>/confirmation/</loc>
+  </url>
+  
+  <url>
+    <loc>/google-for-work/</loc>
   </url>
   
 </urlset>
