@@ -5,7 +5,7 @@
   </button>
   <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-languages">
     {{ range .Site.Languages }}
-      <li class="mdl-menu__item"><a href="{{ printf "%s%s" "/" .Lang }}">{{ .LanguageName }}</a></li>
+      <a href="{{ printf "%s%s" "/" .Lang }}"><li class="mdl-menu__item">{{ .LanguageName }}</li></a>
     {{ end }}
   </ul>
 </div>
