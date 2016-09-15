@@ -11,8 +11,15 @@
   
 - id: free_demo
   translation: "Ask for a free demo!"
+
+- id: terms
+  translation: "Terms &amp; Conditions"
   
-  
+- id: credits
+  translation: "Credits"
+
+- id: contact_us
+  translation: "Contact us"
 # Index Page (Homepage)
 - id: index__title
   translation: "Trusted Advisors for your IT"
