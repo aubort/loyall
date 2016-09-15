@@ -9,6 +9,34 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Credits</title>
+      <link>/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/credits/</guid>
+      <description>
+
+&lt;h4 id=&#34;website-and-design&#34;&gt;Website and Design&lt;/h4&gt;
+
+&lt;p&gt;This website has been designed and build in-house by Pascal Aubort.&lt;/p&gt;
+
+&lt;p&gt;It uses the very useful and Open Source &lt;a href=&#34;http://www.gohugo.io&#34;&gt;Hugo static site generator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;credits&#34;&gt;Credits&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Classroom image:
+&lt;a href=&#34;https://upload.wikimedia.org/wikipedia/commons/4/4a/Stofa_i_hradbraut.jpg&#34;&gt;https://upload.wikimedia.org/wikipedia/commons/4/4a/Stofa_i_hradbraut.jpg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hands-up image:
+&lt;a href=&#34;http://www.pd4pic.com/hands-hand-raised-hands-raised-hands-up-yes.html&#34;&gt;http://www.pd4pic.com/hands-hand-raised-hands-raised-hands-up-yes.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Icons: Most of the icons come from the &lt;a href=&#34;https://design.google.com/icons/&#34;&gt;Material Design icons library&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>For your school</title>
       <link>/google-for-education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
