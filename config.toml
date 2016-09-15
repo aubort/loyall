@@ -3,11 +3,14 @@ baseurl = ""
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-googleAnalytics = "UA-82408067-1"
+# googleAnalytics = "UA-82408067-1"
+
+GoogleAnalytics = "UA-82408067-1"
+Copyright = "Copyright &copy; 2016, Loyall GmbH; all rights reserved."
+
 
 [Author]
     name = "Pascal Aubort"
-GoogleAnalytics = "UA-82408067-1"
 
 #################### Languages ####################
 IsMultiLingual = true

@@ -1,5 +1,13 @@
-<footer class="mdl-mini-footer default-footer">
+<footer id="page-footer" class="mdl-mini-footer default-footer ">
   <div class="mdl-mini-footer__left-section">
-    Copyright &copy; 2016, Loyall GmbH | <a href="{{ "credits" | relLangURL }}">credits</a>
+    <ul class="mdl-mini-footer__link-list smaller-text">
+      <li>{{ .Site.Copyright | safeHTML}}</li>
+    </ul>
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    <ul class="mdl-mini-footer__link-list smaller-text">
+      <li><a href="/terms-and-conditions">Legal</a></li>
+      <li><a href="{{ "/contact" | relLangURL}}">Contact us</a></li>
+    </ul>
   </div>
 </footer>

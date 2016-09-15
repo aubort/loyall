@@ -1,7 +1,7 @@
 +++
 title = "Terms and conditions"
 type = "card"
-layout = "terms"
+layout = "basic"
 +++
 
 ### Welcome to Loyall GmbH!

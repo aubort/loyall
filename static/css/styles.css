@@ -16,6 +16,10 @@ main {
     font-size: 16px;
 }
 
+.smaller-text{
+    font-size:12px;
+}
+
 .narrow{
     width:60%;
     margin-right: auto;
@@ -40,8 +44,10 @@ a {
     background-color: #fff;
 }
 
-section, #header-content, .mdl-mini-footer__left-section {
-    padding: 0 15%;
+section, #header-content, #page-footer {
+    /*padding: 0 15%;*/
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .top-section{
