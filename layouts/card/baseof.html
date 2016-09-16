@@ -20,6 +20,10 @@
 					{{ block "main" . }}
                  		<!-- The part of the page that begins to differ between templates -->
             		{{ end }}
+            		
+            		{{ block "back_button" . }}
+            			{{ partial "back-to-site.html" . }}
+            		{{ end }}
 				</div>
 			</div>
 		</section>

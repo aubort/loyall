@@ -3,7 +3,7 @@
     <div class="section-title">
         {{ .Title }}
     </div>
-    <p class="larger-text center-text">
+    <p class="section-subtitle center-text">
         {{ .Params.subtitle }}
     </p>
 </section>
@@ -30,7 +30,7 @@
                   <i class="material-icons mdl-list__item-avatar list-large-icons colored md-48">laptop_chromebook</i>
                   <span>{{ .Params.section_services_chromebook_title }}</span>
                   <span class="mdl-list__item-text-body">
-                      {{ .Params.section_services_chromebook_text }}
+                      {{ .Params.section_services_chromebook_text | safeHTML }}
                   </span>
                 </span>
             </li>
