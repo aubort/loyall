@@ -55,11 +55,11 @@
     </item>
     
     <item>
-      <title>Professional services</title>
-      <link>/services/</link>
+      <title>Our Mission</title>
+      <link>/about-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/</guid>
+      <guid>/about-us/</guid>
       <description></description>
     </item>
     
@@ -213,6 +213,15 @@ Switzerland&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/google-for-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What we offer</title>
+      <link>/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/</guid>
       <description></description>
     </item>
     

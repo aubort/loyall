@@ -35,7 +35,7 @@ em {
 }
 
 a {
-    color: #ff4081;
+    color: #d32f2f;
     font-weight: 500;
     text-decoration: none;
 }
@@ -140,11 +140,11 @@ section, #header-content, #page-footer {
 #section-page__googleforwork{
     background:
         linear-gradient( 135deg,
-          rgba(2,119,189 ,1),
-          rgba(2,119,189 ,0.7)
+          rgba(211,47,47 ,1),
+          rgba(211,47,47 ,0.7)
         );
     color: #fff;
-    height: 150px;
+    min-height: 150px;
     text-align: center;
 }
 
@@ -155,26 +155,37 @@ section, #header-content, #page-footer {
           rgba(2,119,189 ,0.7)
         );
     color: #fff;
-    height: 150px;
+    min-height: 150px;
     text-align: center;
 }
 
 #section-page__services{
     background:
         linear-gradient( 135deg,
-          rgba(2,119,189 ,1),
-          rgba(2,119,189 ,0.7)
+          rgba(39,174,96 ,1),
+          rgba(39,174,96 ,0.7)
         );
     color: #fff;
     height: 150px;
     text-align: center;
 }
 
+#section-page__about{
+    background:
+        linear-gradient( 135deg,
+          rgba(39,174,96 ,1),
+          rgba(39,174,96 ,0.7)
+        );
+    color: #fff;
+    min-height: 150px;
+    text-align: center;
+}
+
 #section-partial__find-out-more {
     background:
-        linear-gradient( to right,
-          rgba(0,172,193 ,1),
-          rgba(0,172,193 ,0.7)
+        linear-gradient( 135deg,
+          rgba(2,119,189 ,1),
+          rgba(2,119,189 ,0.7)
         ),
         url(/img/handsup.jpg);
     
@@ -300,11 +311,12 @@ footer.mdl-mini-footer.default-footer {
     /*color: #49a145;*/
 }
 
-.mdl-button.btn-primary.contact-us-btn {
-    border: 3px solid #27ae60;
-    background: #FFF;
-    color: #27ae60;
-    height: 38px;
+.mdl-button.btn-primary.btn-contact-us {
+    margin-left:20px;
+    /*border: 3px solid #27ae60;*/
+    /*background: #FFF;*/
+    /*color: #27ae60;*/
+    /*height: 38px;*/
 }
 
 .mdl-button.btn-accent {
@@ -316,12 +328,50 @@ footer.mdl-mini-footer.default-footer {
     margin: 20px 20px;
 }
 
+blockquote {
+    font-style: italic;
+    font-size:1.5em;
+    font-family: Georgia, serif;
+    display: inline-block;
+    position: relative;
+}
+
+blockquote:before { 
+    content: "\201C"; 
+    font-size: 4em; 
+    display: block;
+    top:-30px;
+} 
+blockquote:after { content: ""; }
+
+
+.bio-photo{
+    border-radius: 20em;
+    width:200px;
+    height:200px;
+    /*border:20px solid black;*/
+}
+
+.bio-name {
+    font-stretch: condensed;
+}
+
+.bio-title {
+    /*font-style: italic;*/
+}
+
+.logo-clients {
+    max-width:250px;
+    -webkit-filter: grayscale(100%);
+}
+
+
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-.material-icons.colored { color: rgba(0,188,212 ,1); }
+.material-icons.colored { color: rgba(2,119,189 ,1); }
 .material-icons.dark {color: rgba(69,90,100 ,1); }
 .mdl-list__item-avatar.list-large-icons {
     /*font-size:3.5em;*/
