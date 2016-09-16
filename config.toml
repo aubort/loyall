@@ -59,6 +59,12 @@ DefaultContentLanguageInSubdir = true
     subtitle = "Google for Work"
     path = "google-for-work"
     
+    [[params.sections]]
+    sectionId = "5"
+    prettyName = "About us"
+    subtitle = "Google for Work"
+    path = "about-us"
+    
     
     # [[params.sections]]
     # sectionId = "3"
