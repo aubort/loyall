@@ -10,7 +10,7 @@
         {{ end }}
       </nav>
       {{ partial "contact-us-button.html" }}
-      {{ partial "language-selector.html" .}}
+      <!--{{ partial "language-selector.html" .}}-->
 </header>
 
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
@@ -23,14 +23,14 @@
           {{ .prettyName }}</a>
     {{ end }} 
   
-  <div class="mdl-navigation__link">
-    {{ $currentLanguage := .Language.LanguageName }}
-    {{ range .Site.Languages }}
-      {{ if ne $currentLanguage .LanguageName }}
-        <a href="{{ printf "%s%s" "/" .Lang }}">{{ .LanguageName }}</a>
-      {{ end }}
-    {{ end }}
+  <!--<div class="mdl-navigation__link">-->
+  <!--  {{ $currentLanguage := .Language.LanguageName }}-->
+  <!--  {{ range .Site.Languages }}-->
+  <!--    {{ if ne $currentLanguage .LanguageName }}-->
+  <!--      <a href="{{ printf "%s%s" "/" .Lang }}">{{ .LanguageName }}</a>-->
+  <!--    {{ end }}-->
+  <!--  {{ end }}-->
     
-  </div>
+  <!--</div>-->
   </nav>
 </div>
