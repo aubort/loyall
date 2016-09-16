@@ -311,11 +311,12 @@ footer.mdl-mini-footer.default-footer {
     /*color: #49a145;*/
 }
 
-.mdl-button.btn-primary.contact-us-btn {
-    border: 3px solid #27ae60;
-    background: #FFF;
-    color: #27ae60;
-    height: 38px;
+.mdl-button.btn-primary.btn-contact-us {
+    margin-left:20px;
+    /*border: 3px solid #27ae60;*/
+    /*background: #FFF;*/
+    /*color: #27ae60;*/
+    /*height: 38px;*/
 }
 
 .mdl-button.btn-accent {
