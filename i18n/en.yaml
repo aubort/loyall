@@ -55,10 +55,10 @@
   translation: "Transform your Business"
   
 - id: index_googleforwork_subtitle
-  translation: "We support you with the move to Google for Work"
+  translation: "We support you with your transition to Google for Work"
 
 - id: index_googleforwork_text
-  translation: "Google for Work allows your teams to collaborate better and work more efficiently and securely in the office or on the go."
+  translation: "Google for Work allows your teams to collaborate better and work more efficiently and securely in the office, at home or on the go."
 
 - id: index_googleforwork_card_title
   translation: "What we offer"
@@ -70,7 +70,7 @@
   translation: "Technical implementation"
   
 - id: index_googleforwork_card_item3
-  translation: "Tailored training for your teams"
+  translation: "Tailored trainings for your teams"
   
 - id: index_googleforwork_card_item4
   translation: "Support"
@@ -79,7 +79,7 @@
   translation: "For your school"
 
 - id: index_googleforedu_subtitle
-  translation: "We offer services to help your school smoothly transition to Google Apps for Education"
+  translation: "We offer services to help your school transition smoothly to Google Apps for Education"
 
 - id: index_googleforedu_text
-  translation: "Google Apps for Education in combination to Google Chromebooks is a secure and ideal solution for your educational institution."
+  translation: "Google Apps for Education is a secure and ideal solution for your educational institution - especially in combination with Google Chromebooks."
