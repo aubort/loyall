@@ -28,6 +28,32 @@ DefaultContentLanguageInSubdir = true
         title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
         languageName = "Deutsch"
 
+[[menu.main]]
+    name = "Home"
+    weight = -110
+    identifier = "home"
+    url = "/"
+[[menu.main]]
+    name = "Services"
+    weight = -100
+    identifier = "services"
+    url = "/services/"
+[[menu.main]]
+    name = "Google for Education"
+    weight = -90
+    identifier = "googleforeducation"
+    url = "/google-for-education/"
+[[menu.main]]
+    name = "Google for Work"
+    weight = -80
+    identifier = "googleforwork"
+    url = "/google-for-work/"
+[[menu.main]]
+    name = "About us"
+    weight = -70
+    identifier = "aboutus"
+    url = "/about-us/"
+
 [params]
     description = ""
     #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"

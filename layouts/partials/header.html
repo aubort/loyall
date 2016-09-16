@@ -3,9 +3,10 @@
     <a href="{{ "/" | relLangURL }}" class="header-logo"></a>
     <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
-        {{ range .Site.Params.sections }}
-          <a class="mdl-navigation__link navigation__link" href="{{ .path | relLangURL }}">
-            {{ .prettyName }}
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+          <a class="mdl-navigation__link navigation__link  {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}active{{ end }}" href="{{.URL | relLangURL}}">
+            {{.Name}}
           </a>
         {{ end }}
       </nav>
