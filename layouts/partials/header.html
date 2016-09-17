@@ -5,6 +5,7 @@
       <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
         {{ $currentNode := . }}
         {{ range .Site.Menus.main }}
+          
           <a class="mdl-navigation__link navigation__link  {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}active{{ end }}" href="{{.URL | relLangURL}}">
             {{.Name}}
           </a>
@@ -16,7 +17,7 @@
 
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
   <nav class="mdl-navigation drawer-navigation">
-    <a class="mdl-navigation__link" href="/"><i class="material-icons">home</i></a>
+    <!--<a class="mdl-navigation__link" href="/"><i class="material-icons">home</i></a>-->
     
     {{ range .Site.Params.sections }}
       {{ $path := "a" }}
