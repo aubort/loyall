@@ -418,6 +418,10 @@ ul.mdl-list, li.mdl-list__item{
     color: #27ae60;
 }
 
+.mdl-list__item--three-line.mdl-list__item-primary-content, .mdl-list__item--three-line .mdl-list__item-primary-content{
+    height:auto;
+}
+
 .mdl-card.address-card{
     width: 100%;
 }
