@@ -19,11 +19,20 @@
   <nav class="mdl-navigation drawer-navigation">
     <!--<a class="mdl-navigation__link" href="/"><i class="material-icons">home</i></a>-->
     
-    {{ range .Site.Params.sections }}
-      {{ $path := "a" }}
-        <a class="mdl-navigation__link navigation__link" href="{{ .path | relLangURL }}">
-          {{ .prettyName }}</a>
-    {{ end }} 
+    {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+          
+          <a class="mdl-navigation__link navigation__link  {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}active{{ end }}" href="{{.URL | relLangURL}}">
+            {{.Name}}
+          </a>
+        {{ end }}
+    
+    
+    <!--{{ range .Site.Params.sections }}-->
+    <!--  {{ $path := "a" }}-->
+    <!--    <a class="mdl-navigation__link navigation__link" href="{{ .path | relLangURL }}">-->
+    <!--      {{ .prettyName }}</a>-->
+    <!--{{ end }} -->
   
   <!--<div class="mdl-navigation__link">-->
   <!--  {{ $currentLanguage := .Language.LanguageName }}-->
