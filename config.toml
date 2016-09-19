@@ -50,7 +50,6 @@ DefaultContentLanguageInSubdir = true
     url = "/about-us/"
   
     
-    
 [Languages.de]
     weight = 2
     title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
