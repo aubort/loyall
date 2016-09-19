@@ -18,41 +18,70 @@ DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
 
 [Languages]
-    [Languages.en]
-        weight = 1
-        title = "Loyall - IT Consulting and Google Apps Services"
-        languageName = "English"
+[Languages.en]
+    weight = 1
+    title = "Loyall - IT Consulting and Google Apps Services"
+    languageName = "English"
     
-    [Languages.de]
-        weight = 2
-        title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
-        languageName = "Deutsch"
-
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "Home"
     weight = -110
     identifier = "home"
     url = "/"
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "Services"
     weight = -100
     identifier = "services"
     url = "/services/"
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "Google for Education"
     weight = -90
     identifier = "googleforeducation"
     url = "/google-for-education/"
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "Google for Work"
     weight = -80
     identifier = "googleforwork"
     url = "/google-for-work/"
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "About us"
     weight = -70
     identifier = "aboutus"
     url = "/about-us/"
+  
+    
+    
+[Languages.de]
+    weight = 2
+    title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
+    languageName = "Deutsch"
+
+[[Languages.de.menu.main]]
+    name = "Startseite"
+    weight = -110
+    identifier = "home"
+    url = "/"
+[[Languages.de.menu.main]]
+    name = "Dienstleistungen"
+    weight = -100
+    identifier = "services"
+    url = "/services/"
+[[Languages.de.menu.main]]
+    name = "Google for Education"
+    weight = -90
+    identifier = "googleforeducation"
+    url = "/google-for-education/"
+[[Languages.de.menu.main]]
+    name = "Google for Work"
+    weight = -80
+    identifier = "googleforwork"
+    url = "/google-for-work/"
+[[Languages.de.menu.main]]
+    name = "About us"
+    weight = -70
+    identifier = "aboutus"
+    url = "/about-us/"
+
 
 [params]
     description = ""
