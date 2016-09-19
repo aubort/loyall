@@ -83,6 +83,8 @@ DefaultContentLanguageInSubdir = true
 
 
 [params]
+    primaryPhone = "+41 44 585 33 00"
+    
     description = ""
     #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
     
