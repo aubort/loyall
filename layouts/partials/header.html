@@ -2,18 +2,19 @@
   <div class="mdl-layout__header-row header-row" id="header-content">
     <a href="{{ "/" | relLangURL }}" class="header-logo"></a>
     <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
-        {{- $currentNode := . -}}
-        {{ range .Site.Menus.main -}}
-          {{ if $currentNode.IsPage }}
-              <a class="mdl-navigation__link navigation__link {{ if eq ($currentNode.Permalink | absLangURL)  (.URL | absLangURL) }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-          {{ else }}
-              <a class="mdl-navigation__link navigation__link {{ if eq ($currentNode.Permalink | absLangURL)  (.URL | absLangURL) }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-          {{ end }} 
-        {{- end }}
-      </nav>
-      {{ partial "contact-us-button.html" }}
-      <!--{{ partial "language-selector.html" .}}-->
+    <nav class="mdl-navigation mdl-layout--large-screen-only navigation">
+      {{- $currentNode := . -}}
+      {{ range .Site.Menus.main -}}
+        {{ if $currentNode.IsPage }}
+            <a class="mdl-navigation__link navigation__link {{ if eq ($currentNode.Permalink | absLangURL)  (.URL | absLangURL) }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        {{ else }}
+            <a class="mdl-navigation__link navigation__link {{ if eq ($currentNode.Permalink | absLangURL)  (.URL | absLangURL) }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        {{ end }} 
+      {{- end }}
+    </nav>
+    {{ partial "contact-us-button.html" }}
+  </div>
+<!--{{ partial "language-selector.html" .}}-->
 </header>
 
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
