@@ -2,6 +2,9 @@
 title = "Credits"
 type = "card"
 layout = "basic"
+
+pagetitle = "Credits"
+
 +++
 
 #### Website and Design

@@ -2,6 +2,8 @@
 title = "Terms and conditions"
 type = "card"
 layout = "basic"
+
+pagetitle = "Terms and Conditions"
 +++
 
 ### Welcome to Loyall GmbH!
