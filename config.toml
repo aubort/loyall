@@ -13,7 +13,7 @@ Copyright = "Copyright &copy; 2016, Loyall GmbH; all rights reserved."
     name = "Pascal Aubort"
 
 #################### Languages ####################
-IsMultiLingual = false
+IsMultiLingual = true
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
 
