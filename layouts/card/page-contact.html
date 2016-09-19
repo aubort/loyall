@@ -45,9 +45,21 @@
         <div class="mdl-card__supporting-text">
           <h5 class="primary-color">{{ .Params.address_card_title }}</h5>
           <span>
-            {{ .Params.office_address | safeHTML}}
+            <div itemscope itemtype="http://schema.org/LocalBusiness">
+            
+            <!--<p>Open: <time itemprop="openingHours" datetime="Mo-Fi 09:00-17:00">Monday-Friday 9am-5pm</time></p>-->
+            <span itemprop="name">Loyall GmbH</span>
+            <address itemscope itemtype="http://schema.org/PostalAddress" itemprop="address">
+              <span itemprop="streetAddress">Seestrasse 124</span><br>
+              <span itemprop="postalCode">8802</span>&nbsp;<span itemprop="addressLocality">Kilchberg</span><br>
+              <span itemprop="addressRegion">Zurich - </span>
+              <span itemprop="addressCountry">Switzerland</span>
+            </address>
+            <p><span itemprop="telephone" content="+41445853300">+41 55 585 33 00</span></p>
+          </div>
+            <!--{{ .Params.office_address | safeHTML}}-->
           </span>
-          <p>+41 44 585 33 00</p>
+          
           {{ .Params.view_map | safeHTML}}
           
         </div>
