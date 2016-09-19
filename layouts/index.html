@@ -2,6 +2,7 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 	<title>{{ .Site.Title }}</title>
+	<meta name="description" content="{{ i18n "index_meta_description" }}">
 	{{ partial "head.html" . }}
 </head>
 <body>

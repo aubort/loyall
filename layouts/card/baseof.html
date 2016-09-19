@@ -3,6 +3,7 @@
 
 <head>
 	<title>Loyall - {{ .Params.pagetitle }}</title>
+	<meta name="description" content="{{with .Params.metadescription }}{{ . }}{{ end }}">
 	{{ partial "head.html" . }}
 </head>
 

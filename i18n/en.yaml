@@ -20,7 +20,12 @@
 
 - id: contact_us
   translation: "Contact us"
+  
 # Index Page (Homepage)
+
+- id: index_meta_description
+  translation: "Loyall is your trusted partner for your IT projects. We are specialized in the implementation of Google Apps for Work and Google Apps for Education."
+
 - id: index__title
   translation: "Trusted Advisors for your IT"
   
