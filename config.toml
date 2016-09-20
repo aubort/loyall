@@ -64,7 +64,7 @@ DefaultContentLanguageInSubdir = true
     name = "Dienstleistungen"
     weight = -100
     identifier = "services"
-    url = "/services/"
+    url = "/dienstleistungen/"
 [[Languages.de.menu.main]]
     name = "Google for Education"
     weight = -90
@@ -76,7 +76,7 @@ DefaultContentLanguageInSubdir = true
     identifier = "googleforwork"
     url = "/google-for-work/"
 [[Languages.de.menu.main]]
-    name = "About us"
+    name = "Über uns"
     weight = -70
     identifier = "aboutus"
     url = "/about-us/"
