@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Loyall - IT Beratung und Google Apps Dienstleistungen</title>
-    <link>/de/index.xml</link>
+    <link>https://staging-dot-loyall-www.appspot.com/de/index.xml</link>
     <description>Recent content on Loyall - IT Beratung und Google Apps Dienstleistungen</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright &amp;copy; 2016, Loyall GmbH; all rights reserved.</copyright>
-    <atom:link href="/de/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://staging-dot-loyall-www.appspot.com/de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Für Ihre Schule</title>
-      <link>/de/google-for-education/</link>
+      <link>https://staging-dot-loyall-www.appspot.com/de/google-for-education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/de/google-for-education/</guid>
+      <guid>https://staging-dot-loyall-www.appspot.com/de/google-for-education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Transform your Business</title>
-      <link>/de/google-for-work/</link>
+      <link>https://staging-dot-loyall-www.appspot.com/de/google-for-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/de/google-for-work/</guid>
+      <guid>https://staging-dot-loyall-www.appspot.com/de/google-for-work/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vielen Dank!</title>
-      <link>/de/confirmation/</link>
+      <link>https://staging-dot-loyall-www.appspot.com/de/confirmation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/de/confirmation/</guid>
+      <guid>https://staging-dot-loyall-www.appspot.com/de/confirmation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Was wir anbieten</title>
-      <link>/de/services/</link>
+      <link>https://staging-dot-loyall-www.appspot.com/de/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/de/services/</guid>
+      <guid>https://staging-dot-loyall-www.appspot.com/de/services/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wie können wir helfen?</title>
-      <link>/de/contact/</link>
+      <link>https://staging-dot-loyall-www.appspot.com/de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/de/contact/</guid>
+      <guid>https://staging-dot-loyall-www.appspot.com/de/contact/</guid>
       <description></description>
     </item>
     

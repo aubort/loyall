@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "https://staging-dot-loyall-www.appspot.com"
 #languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
