@@ -9,156 +9,34 @@
     <atom:link href="/de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Google for Work</title>
+      <title>Für Ihre Schule</title>
       <link>/de/google-for-education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/de/google-for-education/</guid>
-      <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforeducation&#34;&gt;
-    &lt;div class=&#34;section-title&#34;&gt;
-        For your school
-    &lt;/div&gt;
-    &lt;p class=&#34;larger-text center-text&#34;&gt;
-        Google Apps for Education provides a powerful suite of online collaboration tools for your administration staff, teachers and students.
-    &lt;/p&gt;
-&lt;/section&gt;
-&lt;section class=&#34;secondary-section&#34;&gt;
-    &lt;div class=&#34;mdl-grid&#34;&gt;
-        &lt;div class=&#34;mdl-cell mdl-cell--12-col&#34;&gt;
-            &lt;div class=&#34;section-title&#34;&gt;Our range of services for educational institutions&lt;/div&gt;
-            &lt;p&gt;In addition to &lt;a href=&#34;/google-for-work/&#34;&gt;the services we provide&lt;/a&gt; to Google Apps for Work customers, we are here to help your institution with the move to Cloud solutions.&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;ul class=&#34;mdl-list&#34;&gt;
-            &lt;li class=&#34;mdl-list__item mdl-list__item--three-line&#34;&gt;
-                &lt;span class=&#34;mdl-list__item-primary-content&#34;&gt;
-                  &lt;i class=&#34;material-icons mdl-list__item-avatar list-large-icons colored md-48&#34;&gt;school&lt;/i&gt;
-                  &lt;span&gt;Customized training&lt;/span&gt;
-                  &lt;span class=&#34;mdl-list__item-text-body&#34;&gt;
-                    We help you get the most out of Google Apps for Education by providing training for your administration staff, teachers and students.
-                  &lt;/span&gt;
-                &lt;/span&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul class=&#34;mdl-list&#34;&gt;
-            &lt;li class=&#34;mdl-list__item mdl-list__item--three-line&#34;&gt;
-                &lt;span class=&#34;mdl-list__item-primary-content&#34;&gt;
-                  &lt;i class=&#34;material-icons mdl-list__item-avatar list-large-icons colored md-48&#34;&gt;laptop_chromebook&lt;/i&gt;
-                  &lt;span&gt;Chromebooks&lt;/span&gt;
-                  &lt;span class=&#34;mdl-list__item-text-body&#34;&gt;
-                    &lt;a href=&#34;https://www.google.com/chromebook/&#34; target=&#34;_blank&#34;&gt;Chromebooks&lt;/a&gt; are ideal computers for your staff and students as it is built to work seamlessly with Google Apps. We help you purchase, configure, deploy and administer the hardware within your institution.
-                  &lt;/span&gt;
-                &lt;/span&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul class=&#34;mdl-list&#34;&gt;
-            &lt;li class=&#34;mdl-list__item mdl-list__item--three-line&#34;&gt;
-                &lt;span class=&#34;mdl-list__item-primary-content&#34;&gt;
-                  &lt;i class=&#34;material-icons mdl-list__item-avatar list-large-icons colored md-48&#34;&gt;help&lt;/i&gt;
-                  &lt;span&gt;Administration and Support&lt;/span&gt;
-                  &lt;span class=&#34;mdl-list__item-text-body&#34;&gt;
-                    You can choose whether you want to administer your Google Apps environment yourself or leave it to us. We are here to support you.
-                  &lt;/span&gt;
-                &lt;/span&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-
-
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Google for Work</title>
-      <link>/de/google-for-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/de/google-for-work/</guid>
-      <description>&lt;section class=&#34;top-section&#34; id=&#34;section-page__googleforwork&#34;&gt;
-    &lt;div class=&#34;section-title&#34;&gt;
-        Transform your Business
-    &lt;/div&gt;
-    &lt;p class=&#34;larger-text center-text&#34;&gt;
-        Google Apps for Work provides a set of &lt;em&gt;online productivity tools&lt;/em&gt; that will help your teams work more efficiently and everywhere they are. You will discover more about which products are included with Google Apps for Work 
-        &lt;a href=&#34;https://apps.google.com/&#34; target=&#34;_blank&#34;&gt;here.&lt;/a&gt;
-    &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&#34;secondary-section&#34;&gt;
-    &lt;div class=&#34;mdl-grid&#34;&gt;
-        &lt;div class=&#34;mdl-cell mdl-cell--12-col&#34;&gt;
-            &lt;div class=&#34;section-title&#34;&gt;Why choose Loyall&lt;/div&gt;
-            &lt;p&gt;Our team is &lt;a href=&#34;http://certification.googleapps.com/admin&#34; target=&#34;_blank&#34;&gt;Google Apps Certified Administrators&lt;/a&gt; and will help you in the implementation and transition to the cloud&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
-            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
-                &lt;div class=&#34;card-title__icon&#34;&gt;
-                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;people&lt;/i&gt;
-                    &lt;p class=&#34;section-subtitle&#34;&gt;Change Management&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
-                    In order to maximize user adoption of Google for Work products, we help you with the communication strategy before, during and after the deployment of Google Apps for Work.
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
-            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
-                &lt;div class=&#34;card-title__icon&#34;&gt;
-                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;settings&lt;/i&gt;
-                    &lt;p class=&#34;section-subtitle&#34;&gt;Technical implementation&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
-                    We take care of the domain(s) management, users provisioning, e-mail routing and delivery setup as well as legacy systems migration. 
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
-            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
-                &lt;div class=&#34;card-title__icon&#34;&gt;
-                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;school&lt;/i&gt;
-                    &lt;p class=&#34;section-subtitle&#34;&gt;Tailored training&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
-                    We provide training tailored to your needs, whether it be for your technical staff or your end-users. 
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone&#34;&gt;
-            &lt;div class=&#34;mdl-card mdl-shadow--2dp services-card center-text&#34;&gt;
-                &lt;div class=&#34;card-title__icon&#34;&gt;
-                    &lt;i class=&#34;material-icons md-48 colored&#34;&gt;all_inclusive&lt;/i&gt;
-                    &lt;p class=&#34;section-subtitle&#34;&gt;Continuous improvement&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&#34;mdl-card__supporting-text justify-text&#34;&gt;
-                    Moving to a new system requires continuous improvement and analysis. We help you analyze your users experience and suggest improvement plans. 
-                    We also provide support 
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&#34;secondary-section&#34;&gt;
-&lt;div class=&#34;center-text&#34;&gt;
-    &lt;p class=&#34;section-subtitle&#34;&gt;Want to find out more?&lt;/p&gt;
-    &lt;a class=&#34;mdl-button mdl-js-button mdl-button--raised btn-primary&#34; href=&#34;{{ &#34;/contact&#34; | .Lang }}&#34;&gt;
-        Ask for a free demo
-  &lt;/a&gt;
-&lt;/div&gt;
-&lt;/section&gt;</description>
-    </item>
-    
-    <item>
-      <title>How can we help?</title>
-      <link>/de/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/de/contact/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Professional services</title>
+      <title>Transform your Business</title>
+      <link>/de/google-for-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/de/google-for-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vielen Dank!</title>
+      <link>/de/confirmation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/de/confirmation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Was wir anbieten</title>
       <link>/de/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -167,11 +45,11 @@
     </item>
     
     <item>
-      <title>Thank You!</title>
-      <link>/de/confirmation/</link>
+      <title>Wie können wir helfen?</title>
+      <link>/de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/de/confirmation/</guid>
+      <guid>/de/contact/</guid>
       <description></description>
     </item>
     

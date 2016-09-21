@@ -383,6 +383,18 @@ blockquote:after { content: ""; }
 
 .material-icons.colored { color: rgba(2,119,189 ,1); }
 .material-icons.dark {color: rgba(69,90,100 ,1); }
+
+.list-item-container {
+    display: flex;
+    max-width:80%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.list-title{
+    font-weight: 700;
+}
+
 .mdl-list__item-avatar.list-large-icons {
     /*font-size:3.5em;*/
     width:65px;
@@ -391,7 +403,7 @@ blockquote:after { content: ""; }
     text-align: center;
     line-height: 130%;
     background-color:#ECEFF1;
-    
+    margin-right:20px;
 }
 
 .card-title__icon{ padding-top:20px; }

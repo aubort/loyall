@@ -27,24 +27,71 @@ type GrooveTicket struct {
 		SendCopyToCustomer bool     `json:"send_copy_to_customer"`
 }
 
+type notFoundInterceptorWriter struct {
+    rw              http.ResponseWriter // set to nil to signal a 404 has been intercepted
+    h               http.Header         // set to nil to signal headers have been emitted
+    notFoundHandler http.Handler
+    r               *http.Request
+}
+
+func (rw *notFoundInterceptorWriter) Header() http.Header {
+    if rw.h == nil && rw.rw != nil {
+        return rw.rw.Header()
+    }
+    return rw.h
+}
+
+func (rw *notFoundInterceptorWriter) WriteHeader(status int) {
+    if status == http.StatusNotFound {
+        rw.notFoundHandler.ServeHTTP(rw.rw, rw.r)
+        rw.rw = nil
+    } else {
+        for k, vs := range rw.h {
+            for _, v := range vs {
+                rw.rw.Header().Add(k, v)
+            }
+        }
+        rw.rw.WriteHeader(status)
+    }
+    rw.h = nil
+}
+
+func (rw *notFoundInterceptorWriter) Write(b []byte) (int, error) {
+    if rw.rw != nil {
+        return rw.rw.Write(b)
+    }
+    // ignore, so do as if everything was written OK
+    return len(b), nil
+}
+
+func StaticSiteHandler(h, notFoundHandler http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        w = &notFoundInterceptorWriter{
+            rw:              w,
+            h:               make(http.Header),
+            notFoundHandler: notFoundHandler,
+            r:               r,
+        }
+        h.ServeHTTP(w, r)
+    })
+}
+
 
 // based on this: http://capotej.com/blog/2013/10/07/golang-http-handlers-as-middleware/
 
-func OurLoggingHandler(h http.Handler) http.Handler {
+func notFoundHandler(h http.Handler) http.Handler {
   return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    // fmt.Println(*r.URL)
-    //c := appengine.NewContext(r)
-    
-    h.ServeHTTP(w, r)
-    
+    // fmt.Println("Something happened")
+    c := appengine.NewContext(r)
+    c.Errorf("something happened!")
+    http.ServeFile(w, r, "public/404.html")
   })
 }
 
 func init() {
     
     fileHandler := http.FileServer(http.Dir("public"))
-    wrappedHandler := OurLoggingHandler(fileHandler)
-    http.Handle("/", wrappedHandler)
+    http.Handle("/", StaticSiteHandler(fileHandler, notFoundHandler(fileHandler)))
 	http.HandleFunc("/contactus/", HandleContactus)
 }
 
