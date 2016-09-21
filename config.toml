@@ -17,75 +17,35 @@ DefaultContentLanguageInSubdir = false
 [Languages]
 [Languages.de]
     weight = 1
-    title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
+    title = "Deutsch Titel"
     languageName = "Deutsch"
 
 [[Languages.de.menu.main]]
     name = "Startseite"
-    weight = -110
+    weight = -100
     identifier = "home"
     url = "/"
+
 [[Languages.de.menu.main]]
-    name = "Dienstleistungen"
-    weight = -100
-    identifier = "services"
-    url = "/services/"
-[[Languages.de.menu.main]]
-    name = "Für Schulen"
-    weight = -90
-    identifier = "googleforeducation"
-    url = "/for-education/"
-[[Languages.de.menu.main]]
-    name = "Für Unternehmen"
-    weight = -80
-    identifier = "forbusiness"
-    url = "/for-business/"
-[[Languages.de.menu.main]]
-    name = "Über uns"
-    weight = -70
-    identifier = "aboutus"
-    url = "/about-us/"
+    name = "Kontakt"
+    weight = -110
+    identifier = "contact"
+    url = "/contact/"
+
 
 [Languages.en]
     weight = 2
-    title = "Loyall - IT Consulting and Google Apps Services"
+    title = "English title"
     languageName = "English"
     
 [[Languages.en.menu.main]]
     name = "Home"
-    weight = -110
+    weight = -100
     identifier = "home"
     url = "/"
-[[Languages.en.menu.main]]
-    name = "Services"
-    weight = -100
-    identifier = "services"
-    url = "/services/"
-[[Languages.en.menu.main]]
-    name = "For Education"
-    weight = -90
-    identifier = "foreducation"
-    url = "/for-education/"
-[[Languages.en.menu.main]]
-    name = "For Business"
-    weight = -80
-    identifier = "forbusiness"
-    url = "/for-business/"
-[[Languages.en.menu.main]]
-    name = "About us"
-    weight = -70
-    identifier = "aboutus"
-    url = "/about-us/"
- 
 
-
-[params]
-    primaryPhone = "+41 44 585 33 00"
-    
-    description = ""
-    #recaptchaSitekey = "6LeURygTAAAAAAfeKQjIzStD2zAPA3gRrxmA0oMK"
-    
-    [params.layout]
-    headerColor = "mdl-color--white"
-    navigationLinkColor = "mdl-color-text--primary"
-    navigationLinkColor_hover = "mdl-color-text--primary-light"
+[[Languages.en.menu.main]]
+    name = "Contact"
+    weight = -110
+    identifier = "contact"
+    url = "/contact/"

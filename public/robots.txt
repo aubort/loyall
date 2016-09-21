@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /confirmation/
-Disallow: /terms-and-conditions/

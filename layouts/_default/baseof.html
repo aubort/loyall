@@ -2,23 +2,16 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 	<title>Loyall - {{ .Params.pagetitle }}</title>
-	<meta name="description" content="{{with .Params.metadescription }}{{ . }}{{ end }}">
-	{{ partial "head.html" . }}
 </head>
 <body>
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		{{ partial "header.html" . }}
 		<main class="mdl-layout__content mdl-color-text--grey-700">
       		
       		{{ block "main" . }}
                  <!-- The part of the page that begins to differ between templates -->
             {{ end }}
       		
-      		
-      		{{ partial "footer.html" . }}
-      		{{ partial "debug.html" . }}
     	</main>
 	</div>
-	{{ partial "footer_includes.html" . }}
 </body>
 </html>
