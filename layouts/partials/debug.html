@@ -1,18 +1,5 @@
-<!--<footer class="mdl-mini-footer default-footer">-->
-<!--  <div class="mdl-mini-footer__left-section">-->
-<!--    {{- $currentNode := . -}}-->
-<!--    {{ range .Site.Menus.main -}}-->
-<!--        {{ if $currentNode.IsPage }}-->
-<!--            <li class="{{ if eq ($currentNode.Permalink | absLangURL)  (.URL | absLangURL) }}active{{ end }}">-->
-<!--                <a href="{{ .URL | absLangURL }}">{{ .Name }} - {{ $currentNode.Permalink | absLangURL }} - {{ .URL | absLangURL }}</a>-->
-<!--            </li>-->
-<!--        {{ else }}-->
-<!--            <li class="{{ if $currentNode.IsMenuCurrent "main" . }}active{{ end }}">-->
-<!--                <a href="{{ .URL | absLangURL }}">{{ .Name }} - {{ .URL | absLangURL }} - {{ $currentNode.IsMenuCurrent "main" .}} {{ if $currentNode.IsMenuCurrent "main" . }}active{{ end }}</a>-->
-<!--            </li>-->
-<!--        {{ end }} -->
-    
-    
-<!--    {{- end }}-->
-<!--  </div>-->
-<!--</footer>-->
+<footer class="mdl-mini-footer default-footer">
+  <div class="mdl-mini-footer__left-section">
+    {{ .Hugo.CommitHash }}
+  </div>
+</footer>

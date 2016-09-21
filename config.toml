@@ -16,7 +16,7 @@ DefaultContentLanguageInSubdir = false
 
 [Languages]
 [Languages.de]
-    weight = 0
+    weight = 1
     title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
     languageName = "Deutsch"
 
@@ -47,7 +47,7 @@ DefaultContentLanguageInSubdir = false
     url = "/about-us/"
 
 [Languages.en]
-    weight = 10
+    weight = 2
     title = "Loyall - IT Consulting and Google Apps Services"
     languageName = "English"
     
@@ -89,44 +89,3 @@ DefaultContentLanguageInSubdir = false
     headerColor = "mdl-color--white"
     navigationLinkColor = "mdl-color-text--primary"
     navigationLinkColor_hover = "mdl-color-text--primary-light"
-    
-    [[params.sections]]
-    sectionId = "1"
-    prettyName = "Home"
-    path = ""
-    
-    [[params.sections]]
-    sectionId = "2"
-    prettyName = "Services"
-    path = "services"
-    
-    [[params.sections]]
-    sectionId = "3"
-    prettyName = "Google for Education"
-    subtitle = "Google for Education"
-    path = "google-for-education"
-    
-    [[params.sections]]
-    sectionId = "4"
-    prettyName = "Google for Work"
-    subtitle = "Google for Work"
-    path = "google-for-work"
-    
-    [[params.sections]]
-    sectionId = "5"
-    prettyName = "About us"
-    subtitle = "Google for Work"
-    path = "about-us"
-    
-    
-    # [[params.sections]]
-    # sectionId = "3"
-    # prettyName = "Partners & Clients"
-    # background = "color-primary-dark"
-    # partial = "home.html"
-    
-    # [[params.sections]]
-    # sectionId = "4"
-    # prettyName = "Contact us"
-    # background = "color-primary-dark"
-    # partial = "home.html"
