@@ -3,9 +3,6 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
-GoogleAnalytics = "UA-82408067-1"
-Copyright = "Copyright &copy; 2016, Loyall GmbH; all rights reserved."
-
 [Author]
     name = "Pascal Aubort"
 
@@ -27,7 +24,7 @@ DefaultContentLanguageInSubdir = false
     url = "/"
 
 [[Languages.de.menu.main]]
-    name = "Kontakt"
+    name = "Kredit"
     weight = -110
     identifier = "contact"
     url = "/credits/"
@@ -45,7 +42,7 @@ DefaultContentLanguageInSubdir = false
     url = "/"
 
 [[Languages.en.menu.main]]
-    name = "Contact"
+    name = "Credits"
     weight = -110
     identifier = "contact"
     url = "/credits/"
