@@ -7,19 +7,17 @@ pagetitle = "Credits"
 
 +++
 
-#### Website and Design
+#### Website und Design
 
-This website has been designed and build in-house by Pascal Aubort.
-
-It uses the very useful and Open Source [Hugo static site generator](http://www.gohugo.io).
+Diese Webseite und Design wurden erstellt in-house von Pascal Aubort, und ist basiert auf dem fantastische und Open Source [Hugo static site generator](http://www.gohugo.io)
 
 
 #### Credits
 
-* Classroom image:
+* Classroom bild:
 https://upload.wikimedia.org/wikipedia/commons/4/4a/Stofa_i_hradbraut.jpg
 
-* Hands-up image:
+* Hands-up bild:
 http://www.pd4pic.com/hands-hand-raised-hands-raised-hands-up-yes.html
 
-* Icons: Most of the icons come from the [Material Design icons library](https://design.google.com/icons/)
+* Icons: Die meiste Icons kommen aus der [Material Design icons library](https://design.google.com/icons/)

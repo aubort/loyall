@@ -11,7 +11,7 @@ pagetitle = "Credits"
 
 This website has been designed and build in-house by Pascal Aubort.
 
-It uses the very useful and Open Source [Hugo static site generator](http://www.gohugo.io).
+It uses the fantastic and Open Source [Hugo static site generator](http://www.gohugo.io).
 
 
 #### Credits
