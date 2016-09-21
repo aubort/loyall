@@ -30,7 +30,7 @@ DefaultContentLanguageInSubdir = false
     name = "Kontakt"
     weight = -110
     identifier = "contact"
-    url = "/contact/"
+    url = "/credits/"
 
 
 [Languages.en]
@@ -48,4 +48,4 @@ DefaultContentLanguageInSubdir = false
     name = "Contact"
     weight = -110
     identifier = "contact"
-    url = "/contact/"
+    url = "/credits/"
