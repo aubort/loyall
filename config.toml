@@ -31,12 +31,12 @@ DefaultContentLanguageInSubdir = false
     identifier = "services"
     url = "/services/"
 [[Languages.de.menu.main]]
-    name = "For Education"
+    name = "Für Schulen"
     weight = -90
     identifier = "googleforeducation"
     url = "/for-education/"
 [[Languages.de.menu.main]]
-    name = "Google for Work"
+    name = "Für Unternehmen"
     weight = -80
     identifier = "forbusiness"
     url = "/for-business/"
