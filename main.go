@@ -58,6 +58,7 @@ func (rw *notFoundInterceptorWriter) WriteHeader(status int) {
 
 func (rw *notFoundInterceptorWriter) Write(b []byte) (int, error) {
     if rw.rw != nil {
+        
         return rw.rw.Write(b)
     }
     // ignore, so do as if everything was written OK
@@ -79,11 +80,10 @@ func StaticSiteHandler(h, notFoundHandler http.Handler) http.Handler {
 
 // based on this: http://capotej.com/blog/2013/10/07/golang-http-handlers-as-middleware/
 
-func notFoundHandler(h http.Handler) http.Handler {
+func notFoundHandler() http.Handler {
   return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    // fmt.Println("Something happened")
     c := appengine.NewContext(r)
-    c.Errorf("something happened!")
+    c.Errorf("404 Page not found!")
     http.ServeFile(w, r, "public/404.html")
   })
 }
@@ -91,7 +91,7 @@ func notFoundHandler(h http.Handler) http.Handler {
 func init() {
     
     fileHandler := http.FileServer(http.Dir("public"))
-    http.Handle("/", StaticSiteHandler(fileHandler, notFoundHandler(fileHandler)))
+    http.Handle("/", StaticSiteHandler(fileHandler, notFoundHandler()))
 	http.HandleFunc("/contactus/", HandleContactus)
 }
 
