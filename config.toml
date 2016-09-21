@@ -1,57 +1,22 @@
 baseurl = "https://staging-dot-loyall-www.appspot.com"
-#languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-# googleAnalytics = "UA-82408067-1"
 
 GoogleAnalytics = "UA-82408067-1"
 Copyright = "Copyright &copy; 2016, Loyall GmbH; all rights reserved."
-
 
 [Author]
     name = "Pascal Aubort"
 
 #################### Languages ####################
 IsMultiLingual = true
-DefaultContentLanguage = "en"
-DefaultContentLanguageInSubdir = true
+DefaultContentLanguage = "de"
+DefaultContentLanguageInSubdir = false
 
 [Languages]
-[Languages.en]
-    weight = 1
-    title = "Loyall - IT Consulting and Google Apps Services"
-    languageName = "English"
-    
-[[Languages.en.menu.main]]
-    name = "Home"
-    weight = -110
-    identifier = "home"
-    url = "/"
-[[Languages.en.menu.main]]
-    name = "Services"
-    weight = -100
-    identifier = "services"
-    url = "/services/"
-[[Languages.en.menu.main]]
-    name = "Google for Education"
-    weight = -90
-    identifier = "googleforeducation"
-    url = "/google-for-education/"
-[[Languages.en.menu.main]]
-    name = "Google for Work"
-    weight = -80
-    identifier = "googleforwork"
-    url = "/google-for-work/"
-[[Languages.en.menu.main]]
-    name = "About us"
-    weight = -70
-    identifier = "aboutus"
-    url = "/about-us/"
-  
-    
 [Languages.de]
-    weight = 2
+    weight = 0
     title = "Loyall - IT Beratung und Google Apps Dienstleistungen"
     languageName = "Deutsch"
 
@@ -66,20 +31,52 @@ DefaultContentLanguageInSubdir = true
     identifier = "services"
     url = "/services/"
 [[Languages.de.menu.main]]
-    name = "Google for Education"
+    name = "For Education"
     weight = -90
     identifier = "googleforeducation"
-    url = "/google-for-education/"
+    url = "/for-education/"
 [[Languages.de.menu.main]]
     name = "Google for Work"
     weight = -80
-    identifier = "googleforwork"
-    url = "/google-for-work/"
+    identifier = "forbusiness"
+    url = "/for-business/"
 [[Languages.de.menu.main]]
     name = "Über uns"
     weight = -70
     identifier = "aboutus"
     url = "/about-us/"
+
+[Languages.en]
+    weight = 10
+    title = "Loyall - IT Consulting and Google Apps Services"
+    languageName = "English"
+    
+[[Languages.en.menu.main]]
+    name = "Home"
+    weight = -110
+    identifier = "home"
+    url = "/"
+[[Languages.en.menu.main]]
+    name = "Services"
+    weight = -100
+    identifier = "services"
+    url = "/services/"
+[[Languages.en.menu.main]]
+    name = "For Education"
+    weight = -90
+    identifier = "foreducation"
+    url = "/for-education/"
+[[Languages.en.menu.main]]
+    name = "For Business"
+    weight = -80
+    identifier = "forbusiness"
+    url = "/for-business/"
+[[Languages.en.menu.main]]
+    name = "About us"
+    weight = -70
+    identifier = "aboutus"
+    url = "/about-us/"
+ 
 
 
 [params]
